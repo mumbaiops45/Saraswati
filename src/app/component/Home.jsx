@@ -193,10 +193,10 @@ export default function Home() {
   return (
     <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+        
         * { box-sizing: border-box; }
-        body { font-family: 'DM Sans', sans-serif; }
-        .font-display { font-family: 'Playfair Display', serif; }
+        
+       
         .hero-bg {
           background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
         }

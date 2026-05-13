@@ -134,10 +134,7 @@ export default function Page() {
   return (
     <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
-        * { box-sizing: border-box; }
-        body { font-family: 'DM Sans', sans-serif; }
-        .font-display { font-family: 'Playfair Display', serif; }
+        
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .gold-text { background: linear-gradient(135deg, #f59e0b, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }

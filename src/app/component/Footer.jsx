@@ -1,30 +1,30 @@
 export default function Footer() {
   const centres = [
-    { name: "Kapurbawdi",       slug: "kapurbawdi"       },
-    { name: "Majiwada",         slug: "majiwada"         },
+    { name: "Kapurbawdi", slug: "kapurbawdi" },
+    { name: "Majiwada", slug: "majiwada" },
     { name: "Highland Dhokali", slug: "highland-dhokali" },
-    { name: "Lodha Amara",      slug: "lodha-amara"      },
-    { name: "Kasheli",          slug: "kasheli"          },
-    { name: "Gokul Nagar",      slug: "gokul-nagar"      },
+    { name: "Lodha Amara", slug: "lodha-amara" },
+    { name: "Kasheli", slug: "kasheli" },
+    { name: "Gokul Nagar", slug: "gokul-nagar" },
   ];
 
   const quickLinks = [
-    { label: "Home",         href: "/"              },
-    { label: "About Us",     href: "/about"         },
-    { label: "Courses",      href: "/courses"       },
-    { label: "Results",      href: "/results"       },
-    { label: "Blog",         href: "/blog"          },
-    { label: "Students Hub", href: "/students-hub"  },
-    { label: "Contact Us",   href: "/contact"       },
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/about" },
+    { label: "Courses", href: "/courses" },
+    { label: "Results", href: "/results" },
+    { label: "Blog", href: "/blog" },
+    { label: "Students Hub", href: "/students-hub" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   const courses = [
-    { label: "Foundation Class 7–10",    href: "/courses#foundation" },
-    { label: "11th & 12th Science",      href: "/courses#hsc"        },
-    { label: "IIT JEE Mains & Advanced", href: "/courses#jee"        },
-    { label: "NEET UG",                  href: "/courses#neet"       },
-    { label: "MHT-CET",                  href: "/courses#mhtcet"     },
-    { label: "Olympiad Preparation",     href: "/courses#olympiad"   },
+    { label: "Foundation Class 7–10", href: "/courses#foundation" },
+    { label: "11th & 12th Science", href: "/courses#hsc" },
+    { label: "IIT JEE Mains & Advanced", href: "/courses#jee" },
+    { label: "NEET UG", href: "/courses#neet" },
+    { label: "MHT-CET", href: "/courses#mhtcet" },
+    { label: "Olympiad Preparation", href: "/courses#olympiad" },
   ];
 
   const year = new Date().getFullYear();
@@ -189,8 +189,8 @@ export default function Footer() {
               <div className="grid grid-cols-3 gap-3 mb-7">
                 {[
                   { val: "24+", label: "Years" },
-                  { val: "6",   label: "Centres" },
-                  { val: "10K+",label: "Students" },
+                  { val: "6", label: "Centres" },
+                  { val: "10K+", label: "Students" },
                 ].map((s, i) => (
                   <div key={i} className="bg-white/4 border border-white/6 rounded-xl px-3 py-3 text-center">
                     <div className="font-display font-black gold-text text-xl">{s.val}</div>
@@ -203,10 +203,10 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <span className="text-gray-600 text-xs font-medium mr-1">Follow us:</span>
                 {[
-                  { icon: "📘", label: "Facebook",  href: "#" },
+                  { icon: "📘", label: "Facebook", href: "#" },
                   { icon: "📸", label: "Instagram", href: "#" },
-                  { icon: "▶️", label: "YouTube",   href: "#" },
-                  { icon: "💼", label: "LinkedIn",  href: "#" },
+                  { icon: "▶️", label: "YouTube", href: "#" },
+                  { icon: "💼", label: "LinkedIn", href: "#" },
                 ].map((s, i) => (
                   <a key={i} href={s.href} title={s.label} className="social-btn">{s.icon}</a>
                 ))}
@@ -302,7 +302,7 @@ export default function Footer() {
 
         <div className="footer-divider" />
 
-        {/* ── BOTTOM BAR ── */}
+        
         <div className="max-w-7xl mx-auto px-6 py-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-600">
             <div className="flex items-center gap-2">
@@ -315,11 +315,23 @@ export default function Footer() {
                 <a key={i} href="#" className="text-gray-600 hover:text-amber-400 transition-colors duration-200">{l}</a>
               ))}
             </div>
-            <div className="flex items-center gap-2">
-              <span className="relative w-2 h-2 bg-emerald-400 rounded-full">
-                <span className="absolute inset-0 bg-emerald-400 rounded-full animate-ping opacity-60" />
+
+            <div className="flex items-center gap-4">
+
+
+              <span className="text-gray-400">|</span>
+
+              <span className="text-gray-500 text-sm">
+                Developed by{" "}
+                <a
+                  href="https://nakshatranamahacreations.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:text-emerald-400 transition-colors"
+                >
+                  nakshatranamahacreations.com
+                </a>
               </span>
-              <span className="text-gray-500">Admissions open · 2026–27</span>
             </div>
           </div>
         </div>

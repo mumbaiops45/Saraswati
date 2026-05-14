@@ -173,12 +173,6 @@ export default function Page() {
 
         <div className="max-w-7xl  px-16">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-xs text-white/40 mb-5" style={{ animation: "fadeIn 0.6s ease 0.1s both" }}>
-              <a href="/" className="hover:text-amber-400 transition-colors">Home</a>
-              <span>/</span><span className="text-white/60">Centres</span>
-              <span>/</span><span className="text-amber-400">{centre.name}</span>
-            </div>
-
             <div className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
               style={{ animation: "fadeIn 0.8s ease 0.2s both" }}>
               📍 {centre.tagline}

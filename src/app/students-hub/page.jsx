@@ -181,7 +181,7 @@ export default function Page() {
 
       {/* ── HERO ── */}
       <section
-        className="clip-hero min-h-[65vh] flex items-center relative overflow-hidden pt-24 pb-32"
+        className=" min-h-[65vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}
       >
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />

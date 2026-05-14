@@ -25,6 +25,18 @@ const navLinks = [
         name: "Kapurbawdi",
         href: "/centres/kapurbawdi",
       },
+      {
+        name: "Lodha-amara",
+        href: "/centres/lodha-amara",
+      },
+      {
+        name: "Kasheli",
+        href: "/centres/kasheli",
+      },
+      {
+        name: "Gokul Nagar",
+        href: "/centres/gokul-nagar",
+      },
     ],
   },
   { name: "Study Resources ", href: "/students-hub" },

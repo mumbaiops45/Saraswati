@@ -191,7 +191,7 @@ function Counter({ target, suffix = "" }) {
 
 export default function Home() {
   return (
-    <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
+    <div className=" bg-white text-gray-900 overflow-x-hidden">
       <style>{`
         
         * { box-sizing: border-box; }
@@ -261,7 +261,7 @@ export default function Home() {
             </div>
 
             <h1
-              className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-7xl text-white leading-[1.1] mb-6"
+              className="font-display text-4xl sm:text-5xl  lg:text-5xl xl:text-5xl text-white leading-[1.1] mb-6"
               style={{ animation: "fadeInUp 0.9s ease 0.3s both" }}
             >
               Thane's Most{" "}
@@ -316,7 +316,7 @@ export default function Home() {
               <span className="text-amber-600 text-xs font-bold tracking-widest uppercase bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">
                 Why Saraswati Educare
               </span>
-              <h2 className="font-display text-3xl lg:text-5xl text-gray-900 mt-5 mb-4">
+              <h2 className="font-display text-5xl lg:text-5xl text-gray-900 mt-5 mb-4">
                 Why Thane Parents Choose{" "}
                 <span className="gold-text">Saraswati Educare</span>
               </h2>
@@ -350,7 +350,7 @@ export default function Home() {
               <span className="text-amber-400 text-xs font-bold tracking-widest uppercase bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full">
                 Courses Overview
               </span>
-              <h2 className="font-display text-3xl lg:text-5xl text-white mt-5 mb-4">
+              <h2 className="font-display text-5xl lg:text-5xl text-white mt-5 mb-4">
                 Courses Offered at{" "}
                 <span className="gold-text">Saraswati Educare</span>
               </h2>
@@ -452,7 +452,7 @@ export default function Home() {
             {testimonials.map((t, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="card-hover testimonial-card bg-white/5 border border-white/10 rounded-2xl p-7 h-full relative">
-                  <div className="text-amber-400 text-4xl font-serif leading-none mb-4">"</div>
+                  <div className="text-amber-400 text-4xl  leading-none mb-4">"</div>
                   <p className="text-gray-300 leading-relaxed text-sm mb-6">{t.review}</p>
                   <div className="mt-auto pt-4 border-t border-white/10">
                     <div className="flex items-center gap-3">

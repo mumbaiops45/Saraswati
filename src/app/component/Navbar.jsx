@@ -26,8 +26,8 @@ const navLinks = [
         href: "/centres/kapurbawdi",
       },
     ],
-  }, 
-{ name: "Study Resources ", href: "/students-hub" },
+  },
+  { name: "Study Resources ", href: "/students-hub" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <>
-      <style>{`
+      {/* <style>{`
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .shine-btn { position: relative; overflow: hidden; }
         .shine-btn::after {
@@ -53,7 +53,7 @@ export default function Navbar() {
           animation: shine 3s infinite;
         }
         @keyframes shine { 0%,100%{left:-75%} 50%{left:125%} }
-      `}</style>
+      `}</style> */}
 
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-500 ${navScrolled
@@ -63,9 +63,10 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-          <a href="/" className="flex items-center gap-3">
+          {/* <a href="/" className="flex items-center gap-3">
+          <img src="/logo.avif" />
             <div className="w-10 h-10 gold-gradient rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md">
-              S
+              
             </div>
             <div>
               <div
@@ -82,6 +83,21 @@ export default function Navbar() {
                 Thane's Premier Coaching
               </div>
             </div>
+          </a> */}
+          <a
+            href="/"
+            className="flex items-center gap-3 group transition-all duration-300"
+          >
+
+            <div className="flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-md bg-white/10 backdrop-blur">
+              <img
+                src="/logo.avif"
+                alt="Saraswati Educare Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+
           </a>
 
           <div

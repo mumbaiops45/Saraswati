@@ -266,7 +266,7 @@ export default function Page() {
               <span className="gold-text">NEET</span>
             </h1>
             <p
-              className="text-white/70 text-lg leading-relaxed max-w-2xl"
+              className="text-white text-md leading-relaxed max-w-2xl"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}
             >
               Every stage of your child's academic journey — under one roof, guided by expert faculty, across 6 centres in Thane.

@@ -99,7 +99,7 @@ export default function Page() {
     }`;
 
   return (
-    <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
+    <div className=" bg-white text-gray-900 overflow-x-hidden">
       <style>{`
         
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
@@ -152,7 +152,7 @@ export default function Page() {
               style={{ animation: "fadeIn 0.9s ease 0.3s both" }}>
               Book a <span className="gold-text">Free Demo</span><br />Class Today
             </h1>
-            <p className="text-white/70 text-lg leading-relaxed max-w-2xl"
+            <p className="text-white text-md leading-relaxed max-w-2xl"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}>
               Walk into any of our 6 centres in Thane or fill in the form below. We respond within 2 hours during school hours.
             </p>

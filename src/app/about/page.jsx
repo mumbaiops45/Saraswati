@@ -138,7 +138,7 @@ export default function Page() {
               <br />in Thane
             </h1>
             <p
-              className="text-white/70 text-lg leading-relaxed max-w-2xl"
+              className="text-white text-md leading-relaxed max-w-2xl"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}
             >
               From a single classroom to six centres and 10,000+ students — this is the story of Thane's most trusted coaching institute.

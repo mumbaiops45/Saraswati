@@ -332,7 +332,7 @@ export default function Page() {
               Expert Study Guides<br />& <span className="gold-text">Exam Strategies</span><br />for Thane Students
             </h1>
             <p
-              className="text-white/70 text-lg leading-relaxed max-w-2xl"
+              className="text-white text-md leading-relaxed max-w-2xl"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}
             >
               JEE preparation, NEET tips, MHT-CET strategy, board exam guides and parent resources — written by faculty who have been coaching Thane students since 2002.

@@ -273,7 +273,7 @@ export default function Home() {
             </h1>
 
             <p
-              className="text-white/70 text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl"
+              className="text-white text-md lg:text-md leading-relaxed mb-10 max-w-2xl"
               style={{ animation: "fadeInUp 0.9s ease 0.5s both" }}
             >
               Saraswati Educare has been helping students in Thane crack IIT JEE, NEET, MHT-CET and board exams since 2002. Six centres. IITian faculty. 24 years of consistent results.
@@ -342,7 +342,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── COURSES ── */}
+     
       <section className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>

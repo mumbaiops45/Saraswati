@@ -129,7 +129,7 @@ export default function Page() {
     }`;
 
   return (
-    <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
+    <div className=" bg-white text-gray-900 overflow-x-hidden">
       <style>{`
        
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
@@ -183,7 +183,7 @@ export default function Page() {
               Coaching Classes in<br /><span className="gold-text">{centre.name}</span>, Thane West
             </h1>
 
-            <p className="text-white/70 text-lg leading-relaxed max-w-2xl mb-8"
+            <p className="text-white text-md leading-relaxed max-w-2xl mb-8"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}>
               {centre.heroDesc}
             </p>

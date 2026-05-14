@@ -232,7 +232,7 @@ export default function Page() {
               <span className="gold-text">Educare</span> Delivers
             </h1>
             <p
-              className="text-white/70 text-lg leading-relaxed max-w-2xl"
+              className="text-white text-md leading-relaxed max-w-2xl"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}
             >
               Numbers do not lie. Below is the record of Saraswati Educare students who cracked the exams that matter — compiled from actual results, not marketing materials.

@@ -216,7 +216,7 @@ export default function Page() {
             </h1>
 
             <p
-              className="text-white/70 text-lg leading-relaxed max-w-2xl mb-8"
+              className="text-white text-md leading-relaxed max-w-2xl mb-8"
               style={{ animation: "fadeIn 0.9s ease 0.5s both" }}
             >
               Previous year papers, formula sheets, NCERT revision notes, practice questions and the 2026 exam deadline calendar — all free from Saraswati Educare for Thane students.

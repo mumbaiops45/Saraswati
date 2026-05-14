@@ -29,9 +29,7 @@ function AnimatedSection({ children, className = "", delay = 0 }) {
   );
 }
 
-// ─────────────────────────────────────────────
-// CENTRE DATA — swap this object for each page
-// ─────────────────────────────────────────────
+
 const centre = {
   name:        "Kapurbawdi",
   slug:        "kapurbawdi",
@@ -39,7 +37,7 @@ const centre = {
   heroDesc:    "Saraswati Educare Kapurbawdi is one of our flagship coaching centres, located at the heart of Kapurbawdi Junction in Thane West. Conveniently accessible from Ghodbunder Road, this centre serves students from Kapurbawdi, Majiwada, Pokhran, Vartak Nagar, Brahmand and surrounding areas.",
   address:     "Address to be provided by client — near Kapurbawdi Junction, Thane West",
   landmark:    "Near Kapurbawdi Junction, Ghodbunder Road",
-  phone:       "+91 XXXXX XXXXX",
+  phone:       "+91 8779624253",
   whatsapp:    "https://wa.me/91XXXXXXXXXX",
   email:       "kapurbawdi@saraswatieducare.com",
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7!2d72.9!3d19.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zKapurbawdi!5e0!3m2!1sen!2sin!4v1",
@@ -132,7 +130,7 @@ export default function Page() {
     }`;
 
   return (
-    <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
+    <div className=" bg-white text-gray-900 overflow-x-hidden">
       <style>{`
        
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
@@ -191,7 +189,7 @@ export default function Page() {
               <span className="gold-text">{centre.name}</span>, Thane
             </h1>
 
-            <p className="text-white/70 text-lg leading-relaxed max-w-2xl mb-8"
+            <p className="text-white text-md leading-relaxed max-w-2xl mb-8"
               style={{ animation:"fadeIn 0.9s ease 0.5s both" }}>
               {centre.heroDesc}
             </p>

@@ -151,7 +151,6 @@ export default function Page() {
   return (
     <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
       <style>{`
-       
         .gold-gradient  { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .gold-text { background: linear-gradient(135deg, #f59e0b, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -179,7 +178,7 @@ export default function Page() {
       `}</style>
 
 
-      {/* ── HERO ── */}
+      
       <section
         className=" min-h-[65vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}
@@ -222,7 +221,7 @@ export default function Page() {
               Previous year papers, formula sheets, NCERT revision notes, practice questions and the 2026 exam deadline calendar — all free from Saraswati Educare for Thane students.
             </p>
 
-            {/* Search */}
+           
             <div
               className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-3 max-w-xl"
               style={{ animation: "fadeIn 0.9s ease 0.7s both" }}
@@ -245,7 +244,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── STATS STRIP ── */}
+     
       <section className="bg-gray-950 py-10">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
@@ -257,7 +256,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── RESOURCES SECTION ── */}
+     
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -274,7 +273,7 @@ export default function Page() {
             </div>
           </AnimatedSection>
 
-          {/* Exam tabs */}
+         
           <AnimatedSection delay={0.08}>
             <div className="tab-scroll flex overflow-x-auto gap-3 pb-4 mb-8 justify-start lg:justify-center">
               {resourceCategories.map((cat) => (
@@ -291,7 +290,7 @@ export default function Page() {
             </div>
           </AnimatedSection>
 
-          {/* Category header */}
+         
           <AnimatedSection delay={0.1}>
             <div className={`rounded-2xl ${activeCat.bgLight} border ${activeCat.border} px-6 py-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3`}>
               <div className="flex items-center gap-3">
@@ -308,12 +307,12 @@ export default function Page() {
             </div>
           </AnimatedSection>
 
-          {/* Resource cards */}
+         
           <div key={activeTab} className="grid grid-cols-1 md:grid-cols-2 gap-5 resources-grid">
             {filtered.length > 0 ? filtered.map((r, i) => (
               <AnimatedSection key={i} delay={i * 0.05}>
                 <div className="card-hover bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex items-start gap-5 group">
-                  {/* Icon block */}
+                  
                   <div className={`w-12 h-12 bg-gradient-to-br ${activeCat.color} rounded-xl flex items-center justify-center text-xl shrink-0 shadow-md group-hover:scale-110 transition-transform duration-200`}>
                     {r.tag === "PYQ" ? "📄" : r.tag === "Formula" ? "🔢" : r.tag === "Notes" ? "📝" : r.tag === "Practice" ? "✏️" : "📋"}
                   </div>
@@ -372,7 +371,7 @@ export default function Page() {
             )}
           </div>
 
-          {/* All categories overview */}
+          
           <AnimatedSection delay={0.1}>
             <div className="mt-14 text-center">
               <p className="text-gray-400 text-sm mb-6">Browse resources from other exam categories</p>
@@ -389,7 +388,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── DEADLINE CALENDAR ── */}
+      
       <section className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -417,7 +416,7 @@ export default function Page() {
                     ? "border-white/5 bg-white/3 opacity-50"
                     : "border-white/10 bg-white/5"
                 }`}>
-                  {/* Colour dot */}
+                 
                   <div className={`w-10 h-10 bg-gradient-to-br ${d.color} rounded-xl flex items-center justify-center text-lg shrink-0 shadow-md`}>
                     {d.icon}
                   </div>
@@ -447,7 +446,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── HOW TO USE ── */}
+     
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -481,7 +480,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── MARQUEE ── */}
+     
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...centres, ...centres, ...centres, ...centres].map((c, i) => (
@@ -492,7 +491,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">
@@ -520,8 +518,6 @@ export default function Page() {
           </AnimatedSection>
         </div>
       </section>
-
-      
     </div>
   );
 }

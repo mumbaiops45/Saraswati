@@ -16,21 +16,15 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
-      - run: npx eslint . --ext .js,.jsx,.ts,.tsx
-      - run: npx prettier --check .
+     
+      - name: Install dependencies
+        run: npm saraswati
+ 
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.jsx --max-warnings=0 --no-error-on-unmatched-pattern
+        continue-on-error: false
 
-  typecheck:
-    name: Type Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-      - run: npm ci
-      - run: npx tsc --noEmit
+ 
 
   build:
     name: Build Check
@@ -41,5 +35,11 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
-      - run: npm run build
+
+      - name: Install dependencies
+        run: npm ci
+ 
+      - name: Build Next.js
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1

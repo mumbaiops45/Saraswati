@@ -1,8 +1,7 @@
-
-
 "use client"
 import { useState, useRef, useEffect } from "react";
-
+import Image from "next/image";
+import { categories, posts } from "../data/data";
 
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
@@ -36,213 +35,51 @@ function AnimatedSection({ children, className = "", delay = 0 }) {
 }
 
 
-const categories = [
-  { id: "all",      label: "All Posts",       icon: "📚", color: "from-amber-500 to-orange-500",   tagBg: "bg-amber-500"  },
-  { id: "jee",      label: "IIT JEE",         icon: "🎯", color: "from-emerald-500 to-teal-500",   tagBg: "bg-emerald-500"},
-  { id: "neet",     label: "NEET UG",          icon: "🩺", color: "from-rose-500 to-pink-500",      tagBg: "bg-rose-500"   },
-  { id: "mhtcet",   label: "MHT-CET",          icon: "🏆", color: "from-violet-500 to-purple-500",  tagBg: "bg-violet-500" },
-  { id: "board",    label: "Board Exam Tips",  icon: "📜", color: "from-blue-500 to-indigo-500",    tagBg: "bg-blue-500"   },
-  { id: "parent",   label: "Parent Guides",    icon: "👨‍👩‍👧", color: "from-orange-500 to-amber-500",   tagBg: "bg-orange-500" },
-  { id: "stories",  label: "Success Stories",  icon: "⭐", color: "from-yellow-500 to-amber-400",   tagBg: "bg-yellow-500" },
-];
+function CardImage({ src, alt, color, tagBg, tag, readTime, height = "h-48", emoji = "📖" }) {
+  const [failed, setFailed] = useState(false);
 
-const posts = [
-  {
-    id: 1,
-    cat: "jee",
-    title: "How to Prepare for IIT JEE from Thane: A Complete Roadmap for 2026",
-    excerpt: "A step-by-step month-by-month preparation plan tailored for students in Thane — covering syllabus, test series, time allocation and how to balance board exams simultaneously.",
-    author: "IITian Faculty, Saraswati Educare",
-    date: "May 2, 2026",
-    readTime: "8 min read",
-    featured: true,
-    tag: "IIT JEE",
-    color: "from-emerald-500 to-teal-500",
-    tagBg: "bg-emerald-500",
-  },
-  {
-    id: 2,
-    cat: "neet",
-    title: "NEET 2026 Preparation Strategy for Thane Students — Month-by-Month Guide",
-    excerpt: "Everything a NEET aspirant in Thane needs: subject-wise weightage, NCERT strategy, mock test frequency and how to avoid the most common NEET preparation mistakes.",
-    author: "NEET Faculty, Saraswati Educare",
-    date: "Apr 28, 2026",
-    readTime: "9 min read",
-    featured: true,
-    tag: "NEET UG",
-    color: "from-rose-500 to-pink-500",
-    tagBg: "bg-rose-500",
-  },
-  {
-    id: 3,
-    cat: "mhtcet",
-    title: "MHT-CET vs JEE vs NEET: Which Exam Should Your Child Prioritise?",
-    excerpt: "A clear, unbiased comparison of all three exams — difficulty level, syllabus overlap, seat availability and career outcomes — to help Thane parents make the right choice.",
-    author: "Academic Team, Saraswati Educare",
-    date: "Apr 20, 2026",
-    readTime: "7 min read",
-    featured: true,
-    tag: "MHT-CET",
-    color: "from-violet-500 to-purple-500",
-    tagBg: "bg-violet-500",
-  },
-  {
-    id: 4,
-    cat: "board",
-    title: "Best Study Schedule for Class 11 Science Students in Thane",
-    excerpt: "A practical, day-by-day timetable for Class 11 students balancing school, coaching and self-study — built by faculty who have seen what actually works over 24 years.",
-    author: "Academic Team, Saraswati Educare",
-    date: "Apr 15, 2026",
-    readTime: "6 min read",
-    featured: false,
-    tag: "Board Exams",
-    color: "from-blue-500 to-indigo-500",
-    tagBg: "bg-blue-500",
-  },
-  {
-    id: 5,
-    cat: "parent",
-    title: "10 Things Parents Should Ask Before Choosing a Coaching Class in Thane",
-    excerpt: "Most parents regret not asking these questions before enrolling. Faculty qualifications, batch sizes, result transparency, refund policies — a complete parent checklist.",
-    author: "Mr. Dilip Singh, Founder",
-    date: "Apr 10, 2026",
-    readTime: "5 min read",
-    featured: false,
-    tag: "Parent Guide",
-    color: "from-orange-500 to-amber-500",
-    tagBg: "bg-orange-500",
-  },
-  {
-    id: 6,
-    cat: "jee",
-    title: "How Small Batch Sizes Improve JEE Results: The Saraswati Educare Approach",
-    excerpt: "Data from 24 years of JEE coaching shows a direct link between batch size and student outcome. Here's why we cap every batch at 30 students — and why it matters for your child.",
-    author: "IITian Faculty, Saraswati Educare",
-    date: "Apr 5, 2026",
-    readTime: "6 min read",
-    featured: false,
-    tag: "IIT JEE",
-    color: "from-emerald-500 to-teal-500",
-    tagBg: "bg-emerald-500",
-  },
-  {
-    id: 7,
-    cat: "jee",
-    title: "Physics Preparation Tips for JEE Mains 2026 — From Our IITian Faculty",
-    excerpt: "Chapter-wise weightage, most-tested topic clusters, common mistakes in Physics and a revision strategy that our IITian faculty has refined over years of JEE coaching in Thane.",
-    author: "Physics Faculty, Saraswati Educare",
-    date: "Mar 30, 2026",
-    readTime: "10 min read",
-    featured: false,
-    tag: "IIT JEE",
-    color: "from-emerald-500 to-teal-500",
-    tagBg: "bg-emerald-500",
-  },
-  {
-    id: 8,
-    cat: "neet",
-    title: "NCERT for NEET: Why 85% of NEET Questions Come from NCERT and How to Exploit It",
-    excerpt: "A subject-wise breakdown of how NEET uses NCERT content, which chapters are over-represented and a focused NCERT revision plan that our NEET faculty swears by.",
-    author: "Biology Faculty, Saraswati Educare",
-    date: "Mar 25, 2026",
-    readTime: "8 min read",
-    featured: false,
-    tag: "NEET UG",
-    color: "from-rose-500 to-pink-500",
-    tagBg: "bg-rose-500",
-  },
-  {
-    id: 9,
-    cat: "mhtcet",
-    title: "MHT-CET 2026 Paper Pattern, Syllabus and Preparation Strategy",
-    excerpt: "Everything you need to know about MHT-CET 2026 — updated paper pattern, syllabus differences from JEE, marking scheme and a month-wise strategy from Saraswati Educare.",
-    author: "MHT-CET Faculty, Saraswati Educare",
-    date: "Mar 20, 2026",
-    readTime: "7 min read",
-    featured: false,
-    tag: "MHT-CET",
-    color: "from-violet-500 to-purple-500",
-    tagBg: "bg-violet-500",
-  },
-  {
-    id: 10,
-    cat: "board",
-    title: "How to Score 90%+ in HSC Maharashtra Board Physics and Chemistry",
-    excerpt: "Answer-writing technique, chapter-wise marks analysis, how to use 15 minutes of reading time wisely and the revision schedule our HSC toppers actually followed.",
-    author: "HSC Faculty, Saraswati Educare",
-    date: "Mar 15, 2026",
-    readTime: "7 min read",
-    featured: false,
-    tag: "Board Exams",
-    color: "from-blue-500 to-indigo-500",
-    tagBg: "bg-blue-500",
-  },
-  {
-    id: 11,
-    cat: "parent",
-    title: "Foundation Coaching for Class 9 and 10: Why Starting Early Changes Everything",
-    excerpt: "Students who start foundation coaching in Class 9 consistently outperform late starters in JEE and NEET. Here's the data — and what parents in Thane should do right now.",
-    author: "Academic Team, Saraswati Educare",
-    date: "Mar 10, 2026",
-    readTime: "6 min read",
-    featured: false,
-    tag: "Parent Guide",
-    color: "from-orange-500 to-amber-500",
-    tagBg: "bg-orange-500",
-  },
-  {
-    id: 12,
-    cat: "stories",
-    title: "Success Story: How Deva Vishwakarma Cracked JEE from Kapurbawdi, Thane",
-    excerpt: "A first-person account of preparation, struggles, faculty support and the mindset shift that helped a Kapurbawdi student qualify JEE Mains in 2021 from Saraswati Educare.",
-    author: "Saraswati Educare Team",
-    date: "Mar 5, 2026",
-    readTime: "5 min read",
-    featured: false,
-    tag: "Success Story",
-    color: "from-yellow-500 to-amber-400",
-    tagBg: "bg-yellow-500",
-  },
-  {
-    id: 13,
-    cat: "parent",
-    title: "Olympiad Preparation for Class 7-10 Students in Thane: A Complete Guide",
-    excerpt: "NSO, IMO, NTSE, KVPY — what each Olympiad offers, how to prepare, and why Olympiad training gives students a long-term edge in JEE and NEET beyond just the certificate.",
-    author: "Foundation Faculty, Saraswati Educare",
-    date: "Feb 28, 2026",
-    readTime: "8 min read",
-    featured: false,
-    tag: "Parent Guide",
-    color: "from-orange-500 to-amber-500",
-    tagBg: "bg-orange-500",
-  },
-  {
-    id: 14,
-    cat: "parent",
-    title: "How to Choose Between JEE Coaching Institutes in Thane: A Parent's Checklist",
-    excerpt: "With dozens of options in Thane West, how do parents make the right call? A 12-point checklist — faculty, results transparency, batch size, location and hidden fee traps to avoid.",
-    author: "Mr. Dilip Singh, Founder",
-    date: "Feb 22, 2026",
-    readTime: "7 min read",
-    featured: false,
-    tag: "Parent Guide",
-    color: "from-orange-500 to-amber-500",
-    tagBg: "bg-orange-500",
-  },
-  {
-    id: 15,
-    cat: "jee",
-    title: "Time Management for JEE and Board Exams Simultaneously: Expert Strategy",
-    excerpt: "The most common reason students underperform in both JEE and boards is poor time allocation. Our faculty shares the exact weekly timetable that top-performing students use.",
-    author: "IITian Faculty, Saraswati Educare",
-    date: "Feb 15, 2026",
-    readTime: "9 min read",
-    featured: false,
-    tag: "IIT JEE",
-    color: "from-emerald-500 to-teal-500",
-    tagBg: "bg-emerald-500",
-  },
-];
+  return (
+    <div className={`${height} relative overflow-hidden shrink-0`}>
+      {!failed && src ? (
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-700"
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <div className={`absolute inset-0 bg-gradient-to-br ${color}`}>
+          <div className="absolute inset-0 flex items-center justify-center opacity-10">
+            <span className="text-[6rem]">{emoji}</span>
+          </div>
+        </div>
+      )}
+
+   
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+      {/* bottom badges */}
+      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+        {tag && (
+          <span className={`${tagBg} text-white text-xs font-bold px-3 py-1 rounded-full shadow`}>
+            {tag}
+          </span>
+        )}
+        {readTime && (
+          <span className="text-white/80 text-xs bg-black/30 px-2 py-1 rounded-full backdrop-blur-sm">
+            {readTime}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+
+function catEmoji(cat) {
+  return { jee: "🎯", neet: "🩺", mhtcet: "🏆", board: "📜", stories: "⭐", parent: "👨‍👩‍👧" }[cat] ?? "📖";
+}
 
 const centres = ["Kapurbawdi", "Majiwada", "Highland Dhokali", "Lodha Amara", "Kasheli", "Gokul Nagar"];
 
@@ -267,7 +104,6 @@ export default function Page() {
   return (
     <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
       <style>{`
-       
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .gold-text { background: linear-gradient(135deg, #f59e0b, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -281,7 +117,6 @@ export default function Page() {
         @keyframes shine { 0%,100%{left:-75%} 50%{left:125%} }
         @keyframes float  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
         .float-anim { animation: float 5s ease-in-out infinite; }
-        .clip-hero { clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); }
         .marquee-track { display:flex; animation: marquee 18s linear infinite; }
         @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
         .tab-scroll::-webkit-scrollbar { display:none; }
@@ -292,15 +127,13 @@ export default function Page() {
         .line-clamp-3 { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
       `}</style>
 
-      
-
-
+   
       <section
         className="min-h-[65vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}
       >
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8  rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8 rounded-full blur-3xl pointer-events-none" />
 
         <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">✍️</span>
@@ -317,32 +150,23 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="max-w-7xl  px-16">
+        <div className="max-w-7xl px-16">
           <div className="max-w-3xl">
-            <div
-              className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
-              style={{ animation: "fadeIn 0.8s ease 0.2s both" }}
-            >
+            <div className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
+              style={{ animation: "fadeIn 0.8s ease 0.2s both" }}>
               Blog & Study Guides
             </div>
-            <h1
-              className="font-display text-4xl sm:text-5xl lg:text-5xl text-white leading-[1.1] mb-6"
-              style={{ animation: "fadeIn 0.9s ease 0.3s both" }}
-            >
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-5xl text-white leading-[1.1] mb-6"
+              style={{ animation: "fadeIn 0.9s ease 0.3s both" }}>
               Expert Study Guides<br />& <span className="gold-text">Exam Strategies</span><br />for Thane Students
             </h1>
-            <p
-              className="text-white text-md leading-relaxed max-w-2xl"
-              style={{ animation: "fadeIn 0.9s ease 0.5s both" }}
-            >
+            <p className="text-white text-md leading-relaxed max-w-2xl"
+              style={{ animation: "fadeIn 0.9s ease 0.5s both" }}>
               JEE preparation, NEET tips, MHT-CET strategy, board exam guides and parent resources — written by faculty who have been coaching Thane students since 2002.
             </p>
 
-        
-            <div
-              className="mt-8 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-3 max-w-xl"
-              style={{ animation: "fadeIn 0.9s ease 0.7s both" }}
-            >
+            <div className="mt-8 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-3 max-w-xl"
+              style={{ animation: "fadeIn 0.9s ease 0.7s both" }}>
               <svg className="w-4 h-4 text-white/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -361,7 +185,7 @@ export default function Page() {
         </div>
       </section>
 
-      
+     
       {activeCategory === "all" && searchQuery === "" && (
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-6">
@@ -379,58 +203,54 @@ export default function Page() {
             </AnimatedSection>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-             
+
+            
               <AnimatedSection delay={0} className="lg:col-span-2">
-                <div className="card-hover bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden h-full group cursor-pointer">
-                 
-                  <div className={`h-56 bg-gradient-to-br ${featuredPosts[0].color} relative overflow-hidden`}>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                      <span className="text-[8rem]">🎯</span>
-                    </div>
-                    <div className="absolute inset-0 bg-black/20" />
-                    <div className="absolute bottom-5 left-6">
-                      <span className={`${featuredPosts[0].tagBg} text-white text-xs font-bold px-3 py-1 rounded-full`}>
-                        {featuredPosts[0].tag}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-7">
+                <div className="card-hover bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden h-full group cursor-pointer flex flex-col">
+                  <CardImage
+                    src={featuredPosts[0]?.image}
+                    alt={featuredPosts[0]?.title}
+                    color={featuredPosts[0]?.color}
+                    tagBg={featuredPosts[0]?.tagBg}
+                    tag={featuredPosts[0]?.tag}
+                    height="h-64"
+                    emoji={catEmoji(featuredPosts[0]?.cat)}
+                  />
+                  <div className="p-7 flex flex-col flex-1">
                     <h3 className="font-display text-xl lg:text-2xl text-gray-900 font-bold mb-3 leading-snug group-hover:text-amber-600 transition-colors duration-200 line-clamp-2">
-                      {featuredPosts[0].title}
+                      {featuredPosts[0]?.title}
                     </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-3">{featuredPosts[0].excerpt}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-3 flex-1">{featuredPosts[0]?.excerpt}</p>
                     <div className="flex items-center justify-between text-xs text-gray-400">
-                      <span>✍️ {featuredPosts[0].author}</span>
+                      <span>✍️ {featuredPosts[0]?.author}</span>
                       <div className="flex items-center gap-3">
-                        <span>📅 {featuredPosts[0].date}</span>
-                        <span>⏱ {featuredPosts[0].readTime}</span>
+                        <span>📅 {featuredPosts[0]?.date}</span>
+                        <span>⏱ {featuredPosts[0]?.readTime}</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
-             
+            
               <div className="flex flex-col gap-6">
                 {featuredPosts.slice(1).map((post, i) => (
                   <AnimatedSection key={post.id} delay={0.1 + i * 0.08}>
-                    <div className="card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group cursor-pointer h-full">
-                      <div className={`h-32 bg-gradient-to-br ${post.color} relative overflow-hidden`}>
-                        <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                          <span className="text-[5rem]">{post.cat === "neet" ? "🩺" : "🏆"}</span>
-                        </div>
-                        <div className="absolute inset-0 bg-black/20" />
-                        <div className="absolute bottom-3 left-4">
-                          <span className={`${post.tagBg} text-white text-xs font-bold px-2.5 py-1 rounded-full`}>
-                            {post.tag}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="p-5">
-                        <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-amber-600 transition-colors duration-200 line-clamp-2">
+                    <div className="card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group cursor-pointer flex flex-col h-full">
+                      <CardImage
+                        src={post.image}
+                        alt={post.title}
+                        color={post.color}
+                        tagBg={post.tagBg}
+                        tag={post.tag}
+                        height="h-40"
+                        emoji={catEmoji(post.cat)}
+                      />
+                      <div className="p-5 flex flex-col flex-1">
+                        <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-2 group-hover:text-amber-600 transition-colors duration-200 line-clamp-2 flex-1">
                           {post.title}
                         </h3>
-                        <div className="flex items-center gap-3 text-xs text-gray-400">
+                        <div className="flex items-center gap-3 text-xs text-gray-400 mt-auto">
                           <span>{post.date}</span>
                           <span>·</span>
                           <span>{post.readTime}</span>
@@ -445,7 +265,7 @@ export default function Page() {
         </section>
       )}
 
-      
+     
       <section className={`py-20 ${activeCategory === "all" && searchQuery === "" ? "bg-gray-50" : "bg-white"}`}>
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -466,7 +286,7 @@ export default function Page() {
             </div>
           </AnimatedSection>
 
-         
+        
           <AnimatedSection delay={0.05}>
             <div className="tab-scroll flex overflow-x-auto gap-3 pb-4 mb-10">
               {categories.map((cat) => (
@@ -486,28 +306,23 @@ export default function Page() {
             </div>
           </AnimatedSection>
 
-  
+        
           {visiblePosts.length > 0 ? (
             <>
               <div key={activeCategory + searchQuery} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 posts-grid">
                 {visiblePosts.map((post, i) => (
                   <AnimatedSection key={post.id} delay={i * 0.06}>
                     <div className="card-hover bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden cursor-pointer group h-full flex flex-col">
-                    
-                      <div className={`h-40 bg-gradient-to-br ${post.color} relative overflow-hidden shrink-0`}>
-                        <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                          <span className="text-[6rem]">{post.cat === "jee" ? "🎯" : post.cat === "neet" ? "🩺" : post.cat === "mhtcet" ? "🏆" : post.cat === "board" ? "📜" : post.cat === "stories" ? "⭐" : "👨‍👩‍👧"}</span>
-                        </div>
-                        <div className="absolute inset-0 bg-black/20" />
-                        <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                          <span className={`${post.tagBg} text-white text-xs font-bold px-3 py-1 rounded-full`}>
-                            {post.tag}
-                          </span>
-                          <span className="text-white/70 text-xs bg-black/20 px-2 py-1 rounded-full backdrop-blur-sm">
-                            {post.readTime}
-                          </span>
-                        </div>
-                      </div>
+                      <CardImage
+                        src={post.image}
+                        alt={post.title}
+                        color={post.color}
+                        tagBg={post.tagBg}
+                        tag={post.tag}
+                        readTime={post.readTime}
+                        height="h-48"
+                        emoji={catEmoji(post.cat)}
+                      />
 
                      
                       <div className="p-6 flex flex-col flex-1">
@@ -527,7 +342,6 @@ export default function Page() {
                 ))}
               </div>
 
-       
               {visibleCount < filteredPosts.length && (
                 <div className="text-center mt-12">
                   <button
@@ -558,7 +372,7 @@ export default function Page() {
         </div>
       </section>
 
-     
+      {/* ── NEWSLETTER ── */}
       <section className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/3 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
@@ -590,7 +404,7 @@ export default function Page() {
         </div>
       </section>
 
-      
+      {/* ── CENTRES MARQUEE ── */}
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...centres, ...centres, ...centres, ...centres].map((c, i) => (
@@ -602,13 +416,13 @@ export default function Page() {
         </div>
       </section>
 
-    
+      {/* ── CTA ── */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="absolute w-2 h-2 bg-white/20 rounded-full"
-              style={{ top:`${20+i*12}%`, left:`${5+i*16}%`, animation:`float ${3+i*0.5}s ease-in-out infinite`, animationDelay:`${i*0.4}s` }}
+              style={{ top: `${20 + i * 12}%`, left: `${5 + i * 16}%`, animation: `float ${3 + i * 0.5}s ease-in-out infinite`, animationDelay: `${i * 0.4}s` }}
             />
           ))}
         </div>
@@ -631,9 +445,6 @@ export default function Page() {
           </AnimatedSection>
         </div>
       </section>
-
-      
-      
     </div>
   );
 }

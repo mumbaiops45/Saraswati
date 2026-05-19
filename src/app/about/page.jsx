@@ -361,8 +361,8 @@ export default function Page() {
                 </p>
               </div>
 
-           
-              <div className="grid grid-cols-2 gap-4">
+              <img src="/FacultyThat.png" />
+              {/* <div className="grid grid-cols-2 gap-4">
                 {[
                   { label: "IITians", icon: "🎓", desc: "Top IIT graduates teaching Maths & Physics" },
                   { label: "NITians", icon: "⚗️", desc: "NIT alumni handling Chemistry & PCM" },
@@ -384,7 +384,7 @@ export default function Page() {
                     <div className="text-gray-400 text-xs leading-snug">{item.desc}</div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </AnimatedSection>
         </div>

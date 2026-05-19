@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
+import { features, courses, toppers, testimonials } from "../data/data";
 
 
 function useInView(threshold = 0.15) {
@@ -40,120 +41,8 @@ const stats = [
   { value: "90%+", label: "Board Pass Rate" },
 ];
 
-const features = [
-  {
-    icon: "🎓",
-    title: "Expert Faculty",
-    desc: "IITians, NITians and NEET-qualified educators who bring subject mastery and exam strategy to every class. Full-time teaching staff only.",
-  },
-  {
-    icon: "👥",
-    title: "Small Batch Sizes",
-    desc: "We limit batch sizes to ensure every student gets individual attention. Doubts are resolved. No student is left behind.",
-  },
-  {
-    icon: "🏆",
-    title: "Proven Results",
-    desc: "Year after year, our students feature in JEE Main, JEE Advanced, NEET and HSC merit lists.",
-  },
-  {
-    icon: "📍",
-    title: "6 Convenient Centres",
-    desc: "Coaching centres at Kapurbawdi, Majiwada, Highland Dhokali, Lodha Amara, Kasheli and Gokul Nagar.",
-  },
-  {
-    icon: "📚",
-    title: "Complete Courses",
-    desc: "From Class 7 Foundation to JEE Advanced — every stage of a student's journey under one roof.",
-  },
-  {
-    icon: "📲",
-    title: "Parent-Friendly Communication",
-    desc: "WhatsApp updates, monthly parent-teacher meets and real-time result sharing keep parents fully informed.",
-  },
-];
 
-const courses = [
-  {
-    tag: "FOUNDATION",
-    title: "Class 7 – 10",
-    desc: "CBSE, ICSE and Maharashtra State Board",
-    color: "from-amber-500 to-orange-600",
-    bg: "bg-amber-50",
-  },
-  {
-    tag: "JUNIOR & SENIOR",
-    title: "11th & 12th Science",
-    desc: "Physics, Chemistry, Maths, Biology",
-    color: "from-blue-500 to-indigo-600",
-    bg: "bg-blue-50",
-  },
-  {
-    tag: "COMPETITIVE",
-    title: "JEE / NEET / MHT-CET",
-    desc: "JEE Mains, JEE Advanced, NEET UG, MHT-CET, Olympiads",
-    color: "from-emerald-500 to-teal-600",
-    bg: "bg-emerald-50",
-  },
-  {
-    tag: "BOARD EXCELLENCE",
-    title: "HSC & SSC",
-    desc: "Board exam specialisation with toppers coaching programme",
-    color: "from-purple-500 to-violet-600",
-    bg: "bg-purple-50",
-  },
-];
 
-const toppers = [
-  {
-    name: "Deva Vishwakarma",
-    exam: "IIT JEE Mains",
-    score: "AIR 2,92,659",
-    year: "2021",
-    centre: "Kapurbawdi",
-    initials: "DV",
-    color: "from-orange-400 to-amber-500",
-  },
-  {
-    name: "Rahul Vishwakarma",
-    exam: "NEET UG",
-    score: "418 / 720",
-    year: "2021",
-    centre: "Majiwada",
-    initials: "RV",
-    color: "from-blue-400 to-indigo-500",
-  },
-  {
-    name: "Rahul Singh",
-    exam: "MHT-CET",
-    score: "98.99 Percentile",
-    year: "2021",
-    centre: "Gokul Nagar",
-    initials: "RS",
-    color: "from-emerald-400 to-teal-500",
-  },
-];
-
-const testimonials = [
-  {
-    review:
-      "My son was struggling with Physics in Class 11. Within three months of joining Saraswati Educare, his confidence completely transformed. He cleared MHT-CET with 97 percentile. Best coaching in Thane.",
-    author: "Parent",
-    centre: "Kapurbawdi Centre",
-  },
-  {
-    review:
-      "We researched every coaching institute in Thane West before choosing Saraswati Educare. The faculty quality, batch size and personal attention is unmatched. My daughter is now preparing for NEET 2026 with full confidence.",
-    author: "Parent",
-    centre: "Majiwada Centre",
-  },
-  {
-    review:
-      "Saraswati Educare gave my son the foundation he needed for JEE. The study material is excellent and the mock tests helped him understand exactly where he stood.",
-    author: "Parent",
-    centre: "Gokul Nagar Centre",
-  },
-];
 
 const centres = [
   "Kapurbawdi",
@@ -195,8 +84,6 @@ export default function Home() {
       <style>{`
         
         * { box-sizing: border-box; }
-        
-       
         .hero-bg {
           background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
         }
@@ -227,43 +114,45 @@ export default function Home() {
         .testimonial-card { backdrop-filter: blur(10px); }
       `}</style>
 
-   
-      <section className="hero-bg  min-h-screen flex items-center relative overflow-hidden pt-20">
-        {/* Background orbs */}
+      <section className="hero-bg min-h-screen flex items-center relative overflow-hidden pt-20">
         <div className="absolute top-20 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-32 left-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-900/20 rounded-full blur-3xl pointer-events-none" />
 
-       
-        <div className="float-anim absolute top-32 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
-          <span className="text-2xl">🏆</span>
-          <div>
-            <div className="font-semibold">24 Years Strong</div>
-            <div className="text-white/60 text-xs">Est. 2002</div>
-          </div>
-        </div>
-        <div className="float-anim absolute bottom-48 right-24 hidden lg:flex items-center gap-2 bg-amber-500/90 backdrop-blur-md rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
-          <span className="text-2xl">🎯</span>
-          <div>
-            <div className="font-semibold">10,000+ Students</div>
-            <div className="text-white/80 text-xs">Coached & Placed</div>
-          </div>
-        </div>
+        <div className="max-w-7xl mx-auto px-6 w-full flex flex-col lg:flex-row items-center gap-12">
 
-        <div className="max-w-7xl  px-16 py-24 lg:py-32">
-          <div className="max-w-3xl">
+          <div className="flex-1">
+
+
+            <div className=" hidden lg:flex absolute top-32 right-16 items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+              <span className="text-2xl">🏆</span>
+              <div>
+                <div className="font-semibold">24 Years Strong</div>
+                <div className="text-white/60 text-xs">Est. 2002</div>
+              </div>
+            </div>
+
+            <div
+              className=" hidden lg:flex absolute bottom-48 right-24 items-center gap-2 bg-amber-500/90 backdrop-blur-md rounded-2xl px-4 py-3 text-white text-sm shadow-xl"
+              style={{ animationDelay: "1.5s" }}
+            >
+              <span className="text-2xl">🎯</span>
+              <div>
+                <div className="font-semibold">10,000+ Students</div>
+                <div className="text-white/80 text-xs">Coached & Placed</div>
+              </div>
+            </div>
+
+            {/* badge */}
             <div
               className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
-              style={{ animation: "fadeIn 0.8s ease 0.2s both" }}
             >
               <span className="relative w-2 h-2 bg-amber-400 rounded-full pulse-dot" />
               Admissions Open · 2026–27 Batch
             </div>
 
-            <h1
-              className="font-display text-4xl sm:text-5xl  lg:text-5xl xl:text-5xl text-white leading-[1.1] mb-6"
-              style={{ animation: "fadeInUp 0.9s ease 0.3s both" }}
-            >
+            {/* heading */}
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-5xl text-white leading-[1.1] mb-6">
               Thane's Most{" "}
               <span className="gold-text">Trusted</span>{" "}
               Coaching for
@@ -272,17 +161,13 @@ export default function Home() {
               <br />& MHT-CET
             </h1>
 
-            <p
-              className="text-white text-md lg:text-md leading-relaxed mb-10 max-w-2xl"
-              style={{ animation: "fadeInUp 0.9s ease 0.5s both" }}
-            >
+            {/* paragraph */}
+            <p className="text-white text-md lg:text-md leading-relaxed mb-10 max-w-2xl">
               Saraswati Educare has been helping students in Thane crack IIT JEE, NEET, MHT-CET and board exams since 2002. Six centres. IITian faculty. 24 years of consistent results.
             </p>
 
-            <div
-              className="flex flex-wrap gap-4"
-              style={{ animation: "fadeInUp 0.9s ease 0.7s both" }}
-            >
+            {/* buttons */}
+            <div className="flex flex-wrap gap-4">
               <a href="#" className="shine-btn gold-gradient text-white font-semibold px-8 py-4 rounded-full shadow-2xl shadow-amber-500/30 text-base hover:scale-105 transition-transform duration-200">
                 📅 Book a Free Demo Class
               </a>
@@ -291,6 +176,25 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="flex-1 flex justify-center lg:justify-end relative">
+
+            <div className="relative w-full max-w-md lg:max-w-lg ">
+
+              {/* main image */}
+              <img
+                src="/coachingclasses.webp"
+                alt="Coaching Classes"
+                className="w-full rounded-3xl shadow-2xl border border-white/10"
+              />
+
+              {/* glow effect */}
+              <div className="absolute inset-0 bg-amber-500/10 blur-2xl rounded-3xl -z-10" />
+            </div>
+
+          </div>
+
         </div>
       </section>
 
@@ -342,7 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-     
+
       <section className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -512,31 +416,6 @@ export default function Home() {
           </AnimatedSection>
         </div>
       </section>
-
-      {/* ── FOOTER ── */}
-      <footer className="bg-gray-950 py-12 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 gold-gradient rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                S
-              </div>
-              <div>
-                <div className="font-display font-bold text-white">Saraswati Educare</div>
-                <div className="text-amber-500 text-xs">Est. 2002 · Thane's Premier Coaching</div>
-              </div>
-            </div>
-            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-gray-500 text-sm">
-              {centres.map((c) => (
-                <span key={c} className="hover:text-amber-400 transition-colors cursor-pointer">{c}</span>
-              ))}
-            </div>
-            <div className="text-gray-600 text-xs text-center md:text-right">
-              © 2026 Saraswati Educare.<br />All rights reserved.
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

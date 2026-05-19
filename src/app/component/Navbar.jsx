@@ -55,17 +55,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* <style>{`
-        .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
-        .shine-btn { position: relative; overflow: hidden; }
-        .shine-btn::after {
-          content: ''; position: absolute; top: -50%; left: -75%; width: 50%; height: 200%;
-          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-          transform: skewX(-20deg);
-          animation: shine 3s infinite;
-        }
-        @keyframes shine { 0%,100%{left:-75%} 50%{left:125%} }
-      `}</style> */}
+      
 
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-500 ${navScrolled
@@ -74,36 +64,14 @@ export default function Navbar() {
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-
-          {/* <a href="/" className="flex items-center gap-3">
-          <img src="/logo.avif" />
-            <div className="w-10 h-10 gold-gradient rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md">
-              
-            </div>
-            <div>
-              <div
-                className={`font-bold text-lg leading-tight transition-colors duration-300 ${navScrolled ? "text-gray-900" : "text-white"
-                  }`}
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                Saraswati Educare
-              </div>
-              <div
-                className={`text-xs transition-colors duration-300 ${navScrolled ? "text-amber-600" : "text-amber-400"
-                  }`}
-              >
-                Thane's Premier Coaching
-              </div>
-            </div>
-          </a> */}
           <a
             href="/"
             className="flex items-center gap-3 group transition-all duration-300"
           >
 
-            <div className="flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-xl overflow-hidden shadow-md bg-white/10 backdrop-blur">
+            <div className="flex items-center justify-center w-18 h-11 md:w-18 md:h-12 rounded-xl overflow-hidden shadow-md bg-white/10 backdrop-blur">
               <img
-                src="/logo.avif"
+                src="/logo.svg"
                 alt="Saraswati Educare Logo"
                 className="w-full h-full object-cover"
               />

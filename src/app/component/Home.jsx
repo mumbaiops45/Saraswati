@@ -124,13 +124,13 @@ export default function Home() {
           <div className="flex-1">
 
 
-            <div className=" hidden lg:flex absolute top-32 right-16 items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+            {/* <div className=" hidden lg:flex absolute top-32 right-16 items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
               <span className="text-2xl">🏆</span>
               <div>
                 <div className="font-semibold">24 Years Strong</div>
                 <div className="text-white/60 text-xs">Est. 2002</div>
               </div>
-            </div>
+            </div> */}
 
             <div
               className=" hidden lg:flex absolute bottom-48 right-24 items-center gap-2 bg-amber-500/90 backdrop-blur-md rounded-2xl px-4 py-3 text-white text-sm shadow-xl"
@@ -144,14 +144,14 @@ export default function Home() {
             </div>
 
             {/* badge */}
-            <div
+            {/* <div
               className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
             >
               <span className="relative w-2 h-2 bg-amber-400 rounded-full pulse-dot" />
               Admissions Open · 2026–27 Batch
-            </div>
+            </div> */}
 
-            {/* heading */}
+           
             <h1 className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-5xl text-white leading-[1.1] mb-6">
               Thane's Most{" "}
               <span className="gold-text">Trusted</span>{" "}
@@ -161,12 +161,12 @@ export default function Home() {
               <br />& MHT-CET
             </h1>
 
-            {/* paragraph */}
+           
             <p className="text-white text-md lg:text-md leading-relaxed mb-10 max-w-2xl">
               Saraswati Educare has been helping students in Thane crack IIT JEE, NEET, MHT-CET and board exams since 2002. Six centres. IITian faculty. 24 years of consistent results.
             </p>
 
-            {/* buttons */}
+          
             <div className="flex flex-wrap gap-4">
               <a href="#" className="shine-btn gold-gradient text-white font-semibold px-8 py-4 rounded-full shadow-2xl shadow-amber-500/30 text-base hover:scale-105 transition-transform duration-200">
                 📅 Book a Free Demo Class
@@ -177,19 +177,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
+         
           <div className="flex-1 flex justify-center lg:justify-end relative">
 
             <div className="relative w-full max-w-md lg:max-w-lg ">
 
-              {/* main image */}
+             
               <img
                 src="/coachingclasses.webp"
                 alt="Coaching Classes"
                 className="w-full rounded-3xl shadow-2xl border border-white/10"
               />
 
-              {/* glow effect */}
               <div className="absolute inset-0 bg-amber-500/10 blur-2xl rounded-3xl -z-10" />
             </div>
 
@@ -198,7 +197,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── STATS STRIP ── */}
+     
       <section className="bg-gray-950 py-14">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
@@ -212,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── WHY SECTION ── */}
+     
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -281,7 +280,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CENTRES MARQUEE ── */}
+      
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...centres, ...centres, ...centres, ...centres].map((c, i) => (
@@ -293,7 +292,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TOPPERS ── */}
+     
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -332,7 +331,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      
       <section className="py-24 bg-gradient-to-br from-gray-950 to-blue-950 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
@@ -376,7 +375,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CTA BANNER ── */}
+    
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">

@@ -91,9 +91,14 @@ export default function Footer() {
           
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-amber-500/20">
-                S
-              </div>
+              
+              <div className="w-14 h-14 sm:w-13 sm:h-13 md:w-13 md:h-13 rounded-xl overflow-hidden bg-white shadow-md">
+              <img
+                src="/logo.svg"
+                alt="Saraswati Educare Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
 
               <div>
                 <div className="font-bold text-lg">Saraswati Educare</div>

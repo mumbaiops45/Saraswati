@@ -245,7 +245,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
 
-          {/* LOGO */}
+       
           <Link href="/" className="flex items-center">
             <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 rounded-xl overflow-hidden bg-white shadow-md">
               <img

@@ -41,10 +41,10 @@ export default function Footer() {
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+        {/* <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center justify-between gap-10"> */}
 
           
-          <div className="text-center lg:text-left">
+          {/* <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/25 text-amber-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
               🎉 Admissions Open — 2026–27
             </div>
@@ -60,10 +60,10 @@ export default function Footer() {
             <p className="text-gray-400 text-sm max-w-md">
               Limited seats across all 6 centres. Book a free demo class — no commitment, no pressure.
             </p>
-          </div>
+          </div> */}
 
          
-          <div className="flex flex-col sm:flex-row gap-3">
+          {/* <div className="flex flex-col sm:flex-row gap-3">
             <a
               href="/contact"
               className="relative overflow-hidden bg-gradient-to-br from-amber-400 to-amber-600 text-white font-bold px-7 py-4 rounded-full shadow-lg shadow-amber-500/20 hover:scale-105 transition"
@@ -78,8 +78,8 @@ export default function Footer() {
             >
               💬 WhatsApp Us
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
 
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />

@@ -105,14 +105,14 @@ export default function Page() {
         @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
       `}</style>
 
-    
+
       <section className=" min-h-[70vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}>
 
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
-     
+
         <div className="float-anim absolute top-32 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">🏛️</span>
           <div>
@@ -147,17 +147,17 @@ export default function Page() {
         </div>
       </section>
 
-     
+
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
             <AnimatedSection delay={0}>
               <div className="relative">
                 <div className="bg-gray-950 rounded-3xl p-10 relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl" />
                   <div className="absolute bottom-0 left-0 w-36 h-36 bg-blue-500/10 rounded-full blur-2xl" />
-                
+
                   <div className="font-display text-[9rem] font-black gold-text leading-none select-none opacity-20 absolute -top-4 -right-4">
                     24
                   </div>
@@ -175,12 +175,12 @@ export default function Page() {
                     ))}
                   </div>
                 </div>
-              
+
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 gold-gradient rounded-2xl opacity-20 rotate-12" />
               </div>
             </AnimatedSection>
 
-           
+
             <AnimatedSection delay={0.15}>
               <span className="text-amber-600 text-xs font-bold tracking-widest uppercase bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">
                 Our Story
@@ -205,7 +205,7 @@ export default function Page() {
         </div>
       </section>
 
-    
+
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -222,7 +222,7 @@ export default function Page() {
           <AnimatedSection delay={0.1}>
             <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-5">
-               
+
                 <div className="md:col-span-2 bg-gray-950 flex flex-col items-center justify-center py-14 px-8 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent" />
                   <div className="w-32 h-32 gold-gradient rounded-full flex items-center justify-center text-white text-5xl font-bold font-display shadow-2xl relative z-10 mb-6">
@@ -240,7 +240,7 @@ export default function Page() {
                     [Client to provide founder photo]
                   </p>
                 </div>
-              
+
                 <div className="md:col-span-3 p-10 flex flex-col justify-center">
                   <div className="text-amber-500 text-5xl font-serif leading-none mb-4">"</div>
                   <p className="text-gray-700 leading-relaxed mb-6">
@@ -263,7 +263,7 @@ export default function Page() {
         </div>
       </section>
 
-  
+
       <section className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -308,7 +308,7 @@ export default function Page() {
         </div>
       </section>
 
-      
+
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -338,7 +338,7 @@ export default function Page() {
         </div>
       </section>
 
-    
+
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -390,7 +390,7 @@ export default function Page() {
         </div>
       </section>
 
-     
+
       <section className="py-24 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -438,10 +438,105 @@ export default function Page() {
           <p className="text-center text-gray-600 text-xs mt-8 italic">
             * Dates and milestones to be verified and updated by client
           </p>
+          {/* <img src="/milestone.png" /> */}
         </div>
       </section>
 
-    
+      {/* <section className="relative py-24 bg-[#0a0a0a] overflow-hidden">
+
+        <div className="absolute top-0 left-1/4 w-[420px] h-[420px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+
+          <AnimatedSection>
+            <div className="text-center mb-20">
+              <span className="inline-block text-amber-400 text-xs font-semibold tracking-[0.25em] uppercase border border-amber-500/10 bg-amber-500/10 px-5 py-2 rounded-full">Milestones</span>
+
+              <h2 className="mt-6 font-display text-4xl lg:text-5xl text-white leading-tight">
+                Our <span className="gold-text">Journey</span>
+                <br />
+                Through the Years
+              </h2>
+              <p className="text-gray-400 max-w-2xl mx-auto mt-6 text-sm lg:text-base leading-relaxed">A timeline of growth, innovation , and excellence that defines our legacy.</p>
+
+            </div>
+          </AnimatedSection>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="relative">
+              <div className="absolute left-4 top-0 w-[2px] h-full bg-gradient-to-b from-amber-500/40 via-amber-400 to-transparent" />
+
+              <div className="space-y-10">
+                {milestones.map((m, i) => (
+                  <AnimatedSection key={i} delay={i * 0.08}>
+                    <div className="relative pl-14">
+                      <div className="absolute left-0 top-2 w-8 h-8 rounded-full gold-gradient flex items-center justify-center shadow-lg shadow-lg shadow-amber-500/30 border border-white/10">
+                        <div className="w-3 h-3 bg-white rounded-full" />
+
+                      </div>
+
+                      <div className="group relative bg-white/[0.04] border border-white/10 rounded-3xl p-6 backdrop-blur-md transition-all duration-300 hover:border-amber-400/40 hover:bg-white/[0.07] hover: -translate-y-1">
+
+                        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-amber-500/0 via-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                        <div className="relative z-10">
+                          <div className="text-amber-400 font-display text-3xl font-bold mb-3">
+                            {m.year}
+                          </div>
+
+                          <p className="text-gray-300 leading-relaxed text-sm lg:text-base">{m.event}</p>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </AnimatedSection>
+                ))}
+              </div>
+
+              <p className="text-gray-600 text-xs italic mt-10 pl-14">* Dates and milestones to be verified and updated by client</p>
+
+            </div>
+
+            <AnimatedSection delay={0.2}>
+              <div className="sticky top-24">
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-blue-500/20 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-80 transition duration-500" />
+                  <div className="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl" />
+
+                  <div className="relative overflow-hidden rounded-[2rem]">
+                    <img
+                      src="/milestone.png"
+                      alt="Company Journey"
+                      className="w-full h-[700px] object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute bottom-6 left-6 bg-black/40 backdrop-blur-md border border-white/10 px-5 py-4 rounded-2xl">
+                      <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">
+                        Since
+                      </p>
+                      <h3 className="text-white text-3xl font-bold font-display">
+                        1998
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </AnimatedSection>
+
+          </div>
+
+        </div>
+
+      </section> */}
+
+
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...centres, ...centres, ...centres, ...centres].map((c, i) => (
@@ -453,7 +548,7 @@ export default function Page() {
         </div>
       </section>
 
-      
+
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">
@@ -490,7 +585,7 @@ export default function Page() {
         </div>
       </section>
 
-     
+
     </div>
   );
 }

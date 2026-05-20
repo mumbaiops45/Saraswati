@@ -372,7 +372,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── NEWSLETTER ── */}
+     
       <section className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/3 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
@@ -404,7 +404,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CENTRES MARQUEE ── */}
+     
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...centres, ...centres, ...centres, ...centres].map((c, i) => (
@@ -416,7 +416,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+     
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">

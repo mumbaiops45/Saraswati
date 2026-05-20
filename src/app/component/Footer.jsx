@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-950 overflow-hidden text-white">
 
-      
+
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl" />
@@ -41,26 +41,26 @@ export default function Footer() {
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
         </div>
 
-     
+
       </div>
 
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-      
+
       <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10">
 
-          
+
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              
+
               <div className="w-14 h-14 sm:w-13 sm:h-13 md:w-13 md:h-13 rounded-xl overflow-hidden bg-white shadow-md">
-              <img
-                src="/logo.svg"
-                alt="Saraswati Educare Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
+                <img
+                  src="/logo.svg"
+                  alt="Saraswati Educare Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
 
               <div>
                 <div className="font-bold text-lg">Saraswati Educare</div>
@@ -94,7 +94,7 @@ export default function Footer() {
             </div>
           </div>
 
-          
+
           <div className="lg:col-span-2">
             <h4 className="text-xs font-bold tracking-widest text-gray-500 mb-4 uppercase">
               Quick Links
@@ -111,7 +111,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          
+
           <div className="lg:col-span-3">
             <h4 className="text-xs font-bold tracking-widest text-gray-500 mb-4 uppercase">
               Our Courses
@@ -128,7 +128,7 @@ export default function Footer() {
             </ul>
           </div>
 
-        
+
           <div className="lg:col-span-3">
             <h4 className="text-xs font-bold tracking-widest text-gray-500 mb-4 uppercase">
               Contact & Hours
@@ -159,15 +159,15 @@ export default function Footer() {
                 </div>
               </a>
 
-              <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-sm">
-                <div className="text-gray-500 text-xs mb-2">🕐 Hours</div>
-                <div className="flex justify-between text-xs">
-                  <span className="text-gray-400">Mon–Sat</span>
-                  <span className="text-amber-400">8 AM – 8 PM</span>
+              <div className="p-3 sm:p-4 rounded-xl bg-white/5 border border-white/10 text-sm">
+                <div className="text-gray-400 text-[11px] sm:text-xs mb-2">  🕐 Hours</div>
+                <div className="flex justify-between items-center text-[12px] sm:text-xs py-1">
+                  <span className="text-white">Mon-Sat</span>
+                  <span className="text-white">8 AM - 8 PM</span>
                 </div>
-                <div className="flex justify-between text-xs">
-                  <span className="text-gray-400">Sun</span>
-                  <span className="text-amber-400">9 AM – 1 PM</span>
+                <div className="flex justify-between items-center text-[12px] sm:text-xs py-1">
+                  <span className="text-white">Sun</span>
+                  <span>9 AM - 1 PM</span>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@ export default function Footer() {
 
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-     
+
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
 
         <div className="flex items-center gap-2">

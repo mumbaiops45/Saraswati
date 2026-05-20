@@ -131,7 +131,6 @@ export default function Page() {
   return (
     <div className=" bg-white text-gray-900 overflow-x-hidden">
       <style>{`
-       
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .gold-text { background: linear-gradient(135deg, #f59e0b, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -154,8 +153,6 @@ export default function Page() {
       `}</style>
 
      
-
-   
       <section className=" min-h-[68vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}>
         <div className="absolute top-10 right-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -213,7 +210,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CENTRE INFO + MAP ── */}
+     
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -289,7 +286,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── COURSES ── */}
+     
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -317,7 +314,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── NEARBY AREAS ── */}
+     
       <section className="py-14 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -342,7 +339,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── TOPPERS ── */}
+     
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -376,7 +373,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── DEMO FORM ── */}
+     
       <section id="demo-form" className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -457,7 +454,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+      
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <AnimatedSection>
@@ -486,7 +483,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── OTHER CENTRES ── */}
+      
       <section className="py-14 bg-gray-50 border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -515,7 +512,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── MARQUEE ── */}
+    
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...allCentres, ...allCentres, ...allCentres, ...allCentres].map((c, i) => (
@@ -526,7 +523,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+     
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">

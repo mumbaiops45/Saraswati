@@ -150,7 +150,6 @@ export default function page() {
 
      
 
-      {/* ── HERO ── */}
       <section
         className="clip-hero min-h-[72vh] flex items-center relative overflow-hidden pt-24 pb-36"
         style={{ background: "linear-gradient(135deg, #00111a 0%, #003556 45%, #0f172a 100%)" }}
@@ -162,7 +161,7 @@ export default function page() {
           backgroundSize: "60px 60px"
         }} />
 
-        {/* Floating badges */}
+       
         <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">📍</span>
           <div><div className="font-semibold">Majiwada, Thane West</div><div className="text-white/60 text-xs">Near Majiwada Flyover</div></div>
@@ -174,9 +173,6 @@ export default function page() {
 
         <div className="max-w-7xl  px-16">
           <div className="max-w-3xl">
-           
-            
-
             <div className="inline-flex items-center gap-2 bg-sky-500/15 border border-sky-500/30 text-sky-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
               style={{ animation: "fadeIn 0.8s ease 0.2s both" }}>
               <span className="relative w-2 h-2 bg-sky-400 rounded-full pulse-dot" />
@@ -212,7 +208,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── STATS ── */}
+     
       <section className="bg-gray-950 py-12">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
@@ -224,7 +220,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── WHY STUDENTS CHOOSE ── */}
+     
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -232,7 +228,7 @@ export default function page() {
               <span className="text-sky-600 text-xs font-bold tracking-widest uppercase bg-sky-50 border border-sky-200 px-4 py-1.5 rounded-full">
                 Why Choose Us
               </span>
-              {/* H2 */}
+             
               <h2 className="font-display text-3xl lg:text-5xl text-gray-900 mt-5 mb-4">
                 Why Students from <span className="maji-text">Majiwada</span><br />
                 Choose Saraswati Educare
@@ -259,7 +255,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── VS MUMBAI COMPARISON ── */}
+      
       <section className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-sky-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-4xl mx-auto px-6 relative z-10">
@@ -280,7 +276,6 @@ export default function page() {
 
           <AnimatedSection delay={0.1}>
             <div className="rounded-2xl overflow-hidden border border-white/10">
-              {/* Table header */}
               <div className="grid grid-cols-3 bg-sky-600/20 border-b border-white/10">
                 <div className="px-4 py-3 text-xs font-bold text-sky-400 uppercase tracking-wide">Comparison</div>
                 <div className="px-4 py-3 text-xs font-bold text-emerald-400 uppercase tracking-wide flex items-center gap-1">
@@ -302,7 +297,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── COURSES ── */}
+   
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -310,7 +305,6 @@ export default function page() {
               <span className="text-sky-600 text-xs font-bold tracking-widest uppercase bg-sky-50 border border-sky-200 px-4 py-1.5 rounded-full">
                 Courses Available
               </span>
-              {/* H2 */}
               <h2 className="font-display text-3xl lg:text-5xl text-gray-900 mt-5 mb-4">
                 Courses at Our Coaching Classes<br />
                 in <span className="maji-text">Majiwada, Thane</span>
@@ -336,12 +330,10 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── LOCATION + MAP + FORM ── */}
+     
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-
-            {/* Location info */}
             <AnimatedSection>
               <span className="text-sky-600 text-xs font-bold tracking-widest uppercase bg-sky-50 border border-sky-200 px-4 py-1.5 rounded-full">
                 Location
@@ -353,8 +345,6 @@ export default function page() {
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 Our <strong>coaching classes in Majiwada Thane</strong> are open for walk-in enquiries and free demo class bookings Monday to Saturday 8AM–8PM. We welcome students from all CBSE, ICSE and Maharashtra State Board schools in Majiwada, Kolbad and Thane West area.
               </p>
-
-              {/* Info cards */}
               <div className="space-y-3 mb-7">
                 {[
                   { icon: "📍", label: "Address",    val: "To be provided by client — near Majiwada, Thane West" },
@@ -372,7 +362,7 @@ export default function page() {
                 ))}
               </div>
 
-              {/* Nearby areas */}
+            
               <div className="mb-7">
                 <div className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Students from nearby areas</div>
                 <div className="flex flex-wrap gap-2">
@@ -399,7 +389,7 @@ export default function page() {
               </div>
             </AnimatedSection>
 
-            {/* Map */}
+           
             <AnimatedSection delay={0.12}>
               <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 h-80 lg:h-[420px] bg-gray-100 relative">
                 <iframe
@@ -423,7 +413,6 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── DEMO FORM ── */}
       <section id="demo-form" className="py-24 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-sky-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-2xl mx-auto px-6 relative z-10">
@@ -504,7 +493,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── SEO TEXT ── */}
+      
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
@@ -530,7 +519,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── OTHER CENTRES ── */}
+     
       <section className="py-14 bg-gray-50 border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -554,7 +543,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── MARQUEE ── */}
+    
       <section className="py-8 overflow-hidden" style={{ background: "#0369a1" }}>
         <div className="marquee-track whitespace-nowrap">
           {["Kapurbawdi","Majiwada","Highland Dhokali","Lodha Amara","Kasheli","Gokul Nagar",
@@ -566,7 +555,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+     
       <section className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-10 left-1/4 w-96 h-96 bg-sky-500/5 rounded-full blur-3xl" />

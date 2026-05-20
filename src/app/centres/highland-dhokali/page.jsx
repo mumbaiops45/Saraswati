@@ -162,7 +162,7 @@ export default function Page() {
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Floating badges */}
+       
         <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">📍</span>
           <div><div className="font-semibold">{centre.landmark}</div><div className="text-white/60 text-xs">Easy to find</div></div>
@@ -174,9 +174,6 @@ export default function Page() {
 
         <div className="max-w-7xl  px-16">
           <div className="max-w-3xl">
-           
-            
-
             <div className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
               style={{ animation:"fadeIn 0.8s ease 0.2s both" }}>
               📍 {centre.tagline}
@@ -207,7 +204,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── STATS STRIP ── */}
       <section className="bg-gray-950 py-10">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {centre.stats.map((s, i) => (
@@ -219,12 +215,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CENTRE INFO + MAP ── */}
+     
       <section className="py-20 bg-white">
         <div className="max-w-7xl  px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-            {/* Left — info */}
+          
             <AnimatedSection>
               <span className="text-amber-600 text-xs font-bold tracking-widest uppercase bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">
                 Centre Details
@@ -238,7 +234,6 @@ export default function Page() {
                 surrounding areas find our {centre.name} coaching centre the most convenient option in Thane West.
               </p>
 
-              {/* Info cards */}
               <div className="space-y-3 mb-8">
                 {[
                   { icon: "📍", label: "Address",    val: centre.address    },
@@ -258,7 +253,7 @@ export default function Page() {
                 ))}
               </div>
 
-              {/* CTA buttons */}
+
               <div className="flex flex-wrap gap-3">
                 <a href={`tel:${centre.phone}`}
                   className={`shine-btn bg-gradient-to-r ${centre.color} text-white font-semibold px-6 py-3 rounded-full text-sm shadow-md hover:scale-105 transition-transform duration-200`}>
@@ -275,10 +270,9 @@ export default function Page() {
               </div>
             </AnimatedSection>
 
-            {/* Right — map */}
+           
             <AnimatedSection delay={0.12}>
               <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 h-96 lg:h-[480px] bg-gray-100 relative">
-                {/* Map embed placeholder — replace src with actual embed URL from Google Maps */}
                 <iframe
                   title={`Saraswati Educare ${centre.name} Map`}
                   src={centre.mapEmbedUrl}
@@ -290,7 +284,7 @@ export default function Page() {
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
                 />
-                {/* Map overlay label */}
+               
                 <div className="absolute top-4 left-4 bg-white rounded-xl shadow-lg px-4 py-2.5 flex items-center gap-2 border border-gray-100">
                   <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${centre.color}`} />
                   <span className="text-gray-900 font-semibold text-xs">Saraswati Educare — {centre.name}</span>
@@ -304,7 +298,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── COURSES AT THIS CENTRE ── */}
+     
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -339,7 +333,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── NEARBY AREAS ── */}
+     
       <section className="py-14 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -366,7 +360,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── TOPPERS FROM THIS CENTRE ── */}
+
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -493,7 +487,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+    
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <AnimatedSection>
@@ -525,7 +519,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── OTHER CENTRES STRIP ── */}
+   
       <section className="py-14 bg-gray-50 border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -560,7 +554,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── MARQUEE ── */}
+     
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...allCentres, ...allCentres, ...allCentres, ...allCentres].map((c, i) => (
@@ -571,7 +565,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">

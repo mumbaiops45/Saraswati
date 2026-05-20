@@ -31,69 +31,69 @@ function AnimatedSection({ children, className = "", delay = 0 }) {
 
 
 const centre = {
-  name:        "Majiwada",
-  slug:        "majiwada",
-  tagline:     "Central Thane West · Majiwada",
-  heroDesc:    "The Saraswati Educare Majiwada coaching centre is centrally located in Majiwada, Thane West, serving students from Majiwada, Kolbad, Lodha Splendora, Vasant Vihar, Brahmand and Eastern Express Highway areas. Students from nearby schools in Majiwada regularly choose our Majiwada coaching centre for 11th and 12th science, IIT JEE and NEET preparation.",
-  address:     "Address to be provided by client — Majiwada, Thane West",
-  landmark:    "Near Majiwada Junction, Thane West",
-  phone:       "+91 XXXXX XXXXX",
-  whatsapp:    "https://wa.me/91XXXXXXXXXX",
-  email:       "majiwada@saraswatieducare.com",
+  name: "Majiwada",
+  slug: "majiwada",
+  tagline: "Central Thane West · Majiwada",
+  heroDesc: "The Saraswati Educare Majiwada coaching centre is centrally located in Majiwada, Thane West, serving students from Majiwada, Kolbad, Lodha Splendora, Vasant Vihar, Brahmand and Eastern Express Highway areas. Students from nearby schools in Majiwada regularly choose our Majiwada coaching centre for 11th and 12th science, IIT JEE and NEET preparation.",
+  address: "Address to be provided by client — Majiwada, Thane West",
+  landmark: "Near Majiwada Junction, Thane West",
+  phone: "+91 XXXXX XXXXX",
+  whatsapp: "https://wa.me/91XXXXXXXXXX",
+  email: "majiwada@saraswatieducare.com",
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7!2d72.96!3d19.22!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjiwada!5e0!3m2!1sen!2sin!4v1",
-  color:       "from-blue-500 to-indigo-500",
-  bgLight:     "bg-blue-50",
+  color: "from-blue-500 to-indigo-500",
+  bgLight: "bg-blue-50",
   borderLight: "border-blue-200",
-  textAccent:  "text-blue-600",
+  textAccent: "text-blue-600",
   nearbyAreas: ["Kolbad", "Lodha Splendora", "Vasant Vihar", "Brahmand", "Eastern Express Highway", "Thane West"],
   courses: [
-    { name: "Foundation (Class 7–10)",  icon: "🏗️", desc: "CBSE, ICSE & Maharashtra State Board" },
-    { name: "11th & 12th Science",      icon: "📖", desc: "PCM, PCB, PCMB — HSC & CBSE"         },
+    { name: "Foundation (Class 7–10)", icon: "🏗️", desc: "CBSE, ICSE & Maharashtra State Board" },
+    { name: "11th & 12th Science", icon: "📖", desc: "PCM, PCB, PCMB — HSC & CBSE" },
     { name: "IIT JEE Mains & Advanced", icon: "🎯", desc: "2-Year Integrated & 1-Year Intensive" },
-    { name: "NEET UG",                  icon: "🩺", desc: "Physics, Chemistry, Biology"          },
-    { name: "MHT-CET",                  icon: "🏆", desc: "Engineering & Pharmacy streams"       },
-    { name: "Olympiad Preparation",     icon: "⭐", desc: "NSO, IMO, NTSE, KVPY"                 },
+    { name: "NEET UG", icon: "🩺", desc: "Physics, Chemistry, Biology" },
+    { name: "MHT-CET", icon: "🏆", desc: "Engineering & Pharmacy streams" },
+    { name: "Olympiad Preparation", icon: "⭐", desc: "NSO, IMO, NTSE, KVPY" },
   ],
   stats: [
     { val: "20+", label: "Years at This Centre" },
-    { val: "45+", label: "Batches per Year"      },
-    { val: "30",  label: "Max Batch Size"        },
-    { val: "6",   label: "Courses Offered"       },
+    { val: "45+", label: "Batches per Year" },
+    { val: "30", label: "Max Batch Size" },
+    { val: "6", label: "Courses Offered" },
   ],
   toppers: [
-    { name: "Rahul Vishwakarma", exam: "NEET UG",   score: "418 / 720", year: "2021", initials: "RV", color: "from-rose-400 to-pink-500"     },
-    { name: "Aisha Khan",        exam: "HSC Board",  score: "96.40%",    year: "2022", initials: "AK", color: "from-blue-400 to-indigo-500"   },
-    { name: "Siddharth Pawar",   exam: "MHT-CET",    score: "97.45 %ile",year: "2022", initials: "SP", color: "from-violet-400 to-purple-500" },
+    { name: "Rahul Vishwakarma", exam: "NEET UG", score: "418 / 720", year: "2021", initials: "RV", color: "from-rose-400 to-pink-500" },
+    { name: "Aisha Khan", exam: "HSC Board", score: "96.40%", year: "2022", initials: "AK", color: "from-blue-400 to-indigo-500" },
+    { name: "Siddharth Pawar", exam: "MHT-CET", score: "97.45 %ile", year: "2022", initials: "SP", color: "from-violet-400 to-purple-500" },
   ],
   faqs: [
-    { q: "Where is the Majiwada coaching centre located?",                        a: "Our Majiwada coaching centre is located near Majiwada Junction in Thane West, easily accessible from Lodha Splendora, Brahmand and the Eastern Express Highway. Exact address will be updated shortly — please call or WhatsApp us." },
-    { q: "Which courses are available at Majiwada?",                              a: "All six Saraswati Educare programmes are available at our Majiwada coaching centre: Foundation (Class 7–10), 11th-12th Science, IIT JEE, NEET UG, MHT-CET and Olympiad coaching." },
-    { q: "How do I book a free demo class at the Majiwada coaching centre?",      a: "Call us, WhatsApp us or fill the form on this page. We will schedule your free demo class at our Majiwada centre within 24 hours — no fees, no commitment." },
-    { q: "Is Majiwada coaching centre suitable for NEET aspirants?",              a: "Yes. The Majiwada centre has dedicated NEET batches with NEET-qualified faculty covering Physics, Chemistry, Botany and Zoology with special NCERT-mastery sessions." },
-    { q: "Do coaching classes in Majiwada run on weekends?",                      a: "Yes. Weekend batches are available at select timings at the Majiwada coaching centre to accommodate students with school schedules or working parents." },
+    { q: "Where is the Majiwada coaching centre located?", a: "Our Majiwada coaching centre is located near Majiwada Junction in Thane West, easily accessible from Lodha Splendora, Brahmand and the Eastern Express Highway. Exact address will be updated shortly — please call or WhatsApp us." },
+    { q: "Which courses are available at Majiwada?", a: "All six Saraswati Educare programmes are available at our Majiwada coaching centre: Foundation (Class 7–10), 11th-12th Science, IIT JEE, NEET UG, MHT-CET and Olympiad coaching." },
+    { q: "How do I book a free demo class at the Majiwada coaching centre?", a: "Call us, WhatsApp us or fill the form on this page. We will schedule your free demo class at our Majiwada centre within 24 hours — no fees, no commitment." },
+    { q: "Is Majiwada coaching centre suitable for NEET aspirants?", a: "Yes. The Majiwada centre has dedicated NEET batches with NEET-qualified faculty covering Physics, Chemistry, Botany and Zoology with special NCERT-mastery sessions." },
+    { q: "Do coaching classes in Majiwada run on weekends?", a: "Yes. Weekend batches are available at select timings at the Majiwada coaching centre to accommodate students with school schedules or working parents." },
   ],
   hours: [
     { day: "Monday – Saturday", time: "8:00 AM – 8:00 PM" },
-    { day: "Sunday",            time: "9:00 AM – 1:00 PM" },
+    { day: "Sunday", time: "9:00 AM – 1:00 PM" },
   ],
 };
 
 const allCentres = [
-  { name: "Kapurbawdi",       slug: "kapurbawdi"       },
-  { name: "Majiwada",         slug: "majiwada"         },
+  { name: "Kapurbawdi", slug: "kapurbawdi" },
+  { name: "Majiwada", slug: "majiwada" },
   { name: "Highland Dhokali", slug: "highland-dhokali" },
-  { name: "Lodha Amara",      slug: "lodha-amara"      },
-  { name: "Kasheli",          slug: "kasheli"          },
-  { name: "Gokul Nagar",      slug: "gokul-nagar"      },
+  { name: "Lodha Amara", slug: "lodha-amara" },
+  { name: "Kasheli", slug: "kasheli" },
+  { name: "Gokul Nagar", slug: "gokul-nagar" },
 ];
 
 const initialForm = { studentName: "", parentName: "", mobile: "", grade: "", board: "", message: "" };
 
 export default function Page() {
-  const [form, setForm]           = useState(initialForm);
-  const [errors, setErrors]       = useState({});
+  const [form, setForm] = useState(initialForm);
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [openFaq, setOpenFaq]     = useState(null);
+  const [openFaq, setOpenFaq] = useState(null);
 
   const handle = (e) => {
     const { name, value } = e.target;
@@ -104,7 +104,7 @@ export default function Page() {
   const validate = () => {
     const e = {};
     if (!form.studentName.trim()) e.studentName = "Required";
-    if (!form.parentName.trim())  e.parentName  = "Required";
+    if (!form.parentName.trim()) e.parentName = "Required";
     if (!form.mobile.trim() || !/^[6-9]\d{9}$/.test(form.mobile.trim())) e.mobile = "Enter valid 10-digit number";
     if (!form.grade) e.grade = "Required";
     if (!form.board) e.board = "Required";
@@ -119,13 +119,11 @@ export default function Page() {
   };
 
   const inputCls = (f) =>
-    `w-full bg-white border rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none transition-all duration-200 ${
-      errors[f] ? "border-rose-400 focus:ring-2 focus:ring-rose-100" : "border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-100"
+    `w-full bg-white border rounded-xl px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none transition-all duration-200 ${errors[f] ? "border-rose-400 focus:ring-2 focus:ring-rose-100" : "border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-100"
     }`;
 
   const selectCls = (f) =>
-    `w-full bg-white border rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none transition-all duration-200 appearance-none ${
-      errors[f] ? "border-rose-400 focus:ring-2 focus:ring-rose-100" : "border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-100"
+    `w-full bg-white border rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none transition-all duration-200 appearance-none ${errors[f] ? "border-rose-400 focus:ring-2 focus:ring-rose-100" : "border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-100"
     }`;
 
   return (
@@ -153,9 +151,6 @@ export default function Page() {
         .success-pop { animation: successPop 0.5s ease both; }
       `}</style>
 
-     
-
-   
       <section className=" min-h-[68vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}>
         <div className="absolute top-10 right-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -201,7 +196,7 @@ export default function Page() {
         </div>
       </section>
 
-     
+
       <section className="bg-gray-950 py-10">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {centre.stats.map((s, i) => (
@@ -213,7 +208,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CENTRE INFO + MAP ── */}
+
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -235,12 +230,12 @@ export default function Page() {
 
               <div className="space-y-3 mb-8">
                 {[
-                  { icon: "📍", label: "Address",    val: centre.address    },
-                  { icon: "📌", label: "Landmark",   val: centre.landmark   },
-                  { icon: "📞", label: "Phone",      val: centre.phone      },
-                  { icon: "✉️", label: "Email",      val: centre.email      },
-                  { icon: "🕐", label: "Mon – Sat",  val: "8:00 AM – 8:00 PM" },
-                  { icon: "🕐", label: "Sunday",     val: "9:00 AM – 1:00 PM" },
+                  { icon: "📍", label: "Address", val: centre.address },
+                  { icon: "📌", label: "Landmark", val: centre.landmark },
+                  { icon: "📞", label: "Phone", val: centre.phone },
+                  { icon: "✉️", label: "Email", val: centre.email },
+                  { icon: "🕐", label: "Mon – Sat", val: "8:00 AM – 8:00 PM" },
+                  { icon: "🕐", label: "Sunday", val: "9:00 AM – 1:00 PM" },
                 ].map((row, i) => (
                   <div key={i} className="flex items-start gap-4 bg-gray-50 rounded-xl px-5 py-3.5 border border-gray-100">
                     <span className="text-lg mt-0.5 shrink-0">{row.icon}</span>
@@ -289,7 +284,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── COURSES ── */}
+
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -317,7 +312,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── NEARBY AREAS ── */}
+
       <section className="py-14 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -342,7 +337,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── TOPPERS ── */}
+
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -376,7 +371,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── DEMO FORM ── */}
+
       <section id="demo-form" className="py-20 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -425,7 +420,7 @@ export default function Page() {
                       <label className="block text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Class / Grade <span className="text-rose-500">*</span></label>
                       <select name="grade" value={form.grade} onChange={handle} className={selectCls("grade")}>
                         <option value="">Select class</option>
-                        {["Class 7","Class 8","Class 9","Class 10","11th PCM","11th PCB","12th PCM","12th PCB","JEE Mains","JEE Advanced","NEET","MHT-CET","Other"].map(o => <option key={o}>{o}</option>)}
+                        {["Class 7", "Class 8", "Class 9", "Class 10", "11th PCM", "11th PCB", "12th PCM", "12th PCB", "JEE Mains", "JEE Advanced", "NEET", "MHT-CET", "Other"].map(o => <option key={o}>{o}</option>)}
                       </select>
                       {errors.grade && <p className="text-rose-500 text-xs mt-1">{errors.grade}</p>}
                     </div>
@@ -433,7 +428,7 @@ export default function Page() {
                       <label className="block text-xs font-semibold text-gray-500 mb-1.5 uppercase tracking-wide">Board <span className="text-rose-500">*</span></label>
                       <select name="board" value={form.board} onChange={handle} className={selectCls("board")}>
                         <option value="">Select board</option>
-                        {["CBSE","ICSE","Maharashtra State Board"].map(o => <option key={o}>{o}</option>)}
+                        {["CBSE", "ICSE", "Maharashtra State Board"].map(o => <option key={o}>{o}</option>)}
                       </select>
                       {errors.board && <p className="text-rose-500 text-xs mt-1">{errors.board}</p>}
                     </div>
@@ -457,7 +452,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6">
           <AnimatedSection>
@@ -486,7 +481,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── OTHER CENTRES ── */}
+
       <section className="py-14 bg-gray-50 border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
@@ -498,11 +493,10 @@ export default function Page() {
             {allCentres.map((c, i) => (
               <AnimatedSection key={i} delay={i * 0.06}>
                 <a href={`/centres/${c.slug}`}
-                  className={`card-hover block text-center p-4 rounded-2xl border transition-all duration-200 ${
-                    c.slug === centre.slug
+                  className={`card-hover block text-center p-4 rounded-2xl border transition-all duration-200 ${c.slug === centre.slug
                       ? `${centre.bgLight} ${centre.borderLight} border`
                       : "bg-white border-gray-100 hover:border-amber-200 hover:bg-amber-50/30"
-                  }`}>
+                    }`}>
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-white font-bold text-sm mx-auto mb-2 shadow-sm ${c.slug === centre.slug ? `bg-gradient-to-r ${centre.color}` : "gold-gradient"}`}>
                     {c.slug === centre.slug ? "✓" : "S"}
                   </div>
@@ -515,7 +509,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── MARQUEE ── */}
+
       <section className="py-8 bg-amber-500 overflow-hidden">
         <div className="marquee-track whitespace-nowrap">
           {[...allCentres, ...allCentres, ...allCentres, ...allCentres].map((c, i) => (
@@ -526,13 +520,13 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="absolute w-2 h-2 bg-white/20 rounded-full"
-              style={{ top:`${20+i*12}%`, left:`${5+i*16}%`, animation:`float ${3+i*0.5}s ease-in-out infinite`, animationDelay:`${i*0.4}s` }} />
+              style={{ top: `${20 + i * 12}%`, left: `${5 + i * 16}%`, animation: `float ${3 + i * 0.5}s ease-in-out infinite`, animationDelay: `${i * 0.4}s` }} />
           ))}
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
@@ -554,8 +548,6 @@ export default function Page() {
           </AnimatedSection>
         </div>
       </section>
-
-    
     </div>
   );
 }

@@ -30,7 +30,7 @@ function AnimatedSection({ children, className = "", delay = 0 }) {
   );
 }
 
-// ── DATA ──
+
 const pcmSubjects = [
   { icon: "⚛️",  subject: "Physics",   desc: "Mechanics, Electrostatics, Optics, Modern Physics — full HSC + JEE/MHT-CET coverage. Dedicated Physics specialist only.",  color: "from-blue-500 to-indigo-500"   },
   { icon: "🧪",  subject: "Chemistry", desc: "Physical, Organic and Inorganic Chemistry — IUPAC nomenclature, name reactions, equilibrium and electrochemistry.", color: "from-emerald-500 to-teal-500"  },
@@ -149,7 +149,7 @@ export default function page() {
           backgroundSize: "60px 60px"
         }} />
 
-        {/* Floating badges */}
+       
         <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">📖</span>
           <div><div className="font-semibold">PCM · PCB · PCMB</div><div className="text-white/60 text-xs">All streams available</div></div>
@@ -161,16 +161,13 @@ export default function page() {
 
         <div className="max-w-7xl px-16">
           <div className="max-w-3xl">
-            
-            
-
             <div className="inline-flex items-center gap-2 bg-blue-500/15 border border-blue-500/30 text-blue-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
               style={{ animation: "fadeIn 0.8s ease 0.2s both" }}>
               <span className="relative w-2 h-2 bg-blue-400 rounded-full pulse-dot" />
               11th & 12th Science · Thane
             </div>
 
-            {/* H1 */}
+          
             <h1
               className="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1] mb-6"
               style={{ animation: "fadeIn 0.9s ease 0.3s both" }}
@@ -199,7 +196,6 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── STATS ── */}
       <section className="bg-gray-950 py-12">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
@@ -211,7 +207,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── STREAM SELECTOR (PCM / PCB / PCMB) ── */}
+     
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -219,7 +215,6 @@ export default function page() {
               <span className="text-blue-600 text-xs font-bold tracking-widest uppercase bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">
                 Choose Your Stream
               </span>
-              {/* H2 — PCM */}
               <h2 className="font-display text-3xl lg:text-5xl text-gray-900 mt-5 mb-4">
                 PCM · PCB · PCMB —<br />
                 <span className="hsc-text">All Streams Covered in Thane</span>
@@ -230,7 +225,6 @@ export default function page() {
             </div>
           </AnimatedSection>
 
-          {/* Stream Tabs */}
           <AnimatedSection delay={0.08}>
             <div className="flex justify-center gap-3 mb-10">
               {["PCM", "PCB", "PCMB"].map((stream) => (
@@ -248,7 +242,6 @@ export default function page() {
             </div>
           </AnimatedSection>
 
-          {/* Stream Detail */}
           {streamCompare.map((s) => {
             const shortStream = s.stream.split(" ")[1];
             if (shortStream !== activeStream) return null;
@@ -286,7 +279,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── PCM SUBJECTS ── */}
+     
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -294,7 +287,7 @@ export default function page() {
               <span className="text-blue-600 text-xs font-bold tracking-widest uppercase bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">
                 PCM Stream
               </span>
-              {/* H2 — PCM keyword */}
+          
               <h2 className="font-display text-3xl lg:text-4xl text-gray-900 mt-5 mb-3">
                 PCM Coaching for Engineering Students —<br />
                 <span className="hsc-text">11th & 12th Thane</span>
@@ -321,7 +314,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── PCB SUBJECTS ── */}
+      
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -329,7 +322,7 @@ export default function page() {
               <span className="text-rose-600 text-xs font-bold tracking-widest uppercase bg-rose-50 border border-rose-200 px-4 py-1.5 rounded-full">
                 PCB Stream
               </span>
-              {/* H2 — PCB keyword */}
+             
               <h2 className="font-display text-3xl lg:text-4xl text-gray-900 mt-5 mb-3">
                 PCB Coaching for Medical Students —<br />
                 <span className="neet-text">11th & 12th Thane</span>
@@ -356,7 +349,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── WHY CRITICAL ── */}
+     
       <section className="py-24 bg-gray-950 relative overflow-hidden">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -366,7 +359,7 @@ export default function page() {
               <span className="text-blue-400 text-xs font-bold tracking-widest uppercase bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full">
                 Why It Matters
               </span>
-              {/* H2 */}
+             
               <h2 className="font-display text-3xl lg:text-5xl text-white mt-5 mb-4">
                 Why 11th & 12th is the<br />
                 <span className="hsc-text">Most Critical Phase</span> — and How We Handle It
@@ -393,7 +386,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── 6 CENTRES ── */}
+    
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
@@ -401,7 +394,7 @@ export default function page() {
               <span className="text-blue-600 text-xs font-bold tracking-widest uppercase bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">
                 Our Locations
               </span>
-              {/* H2 */}
+            
               <h2 className="font-display text-3xl lg:text-5xl text-gray-900 mt-5 mb-4">
                 11th & 12th Coaching in Thane —<br />
                 <span className="hsc-text">Available at 6 Centres</span>
@@ -432,7 +425,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── SEO TEXT + LINKS ── */}
+    
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
@@ -465,7 +458,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── MARQUEE ── */}
+    
       <section className="py-8 overflow-hidden" style={{ background: "#1d4ed8" }}>
         <div className="marquee-track whitespace-nowrap">
           {[...centreNames, ...centreNames, ...centreNames, ...centreNames].map((c, i) => (
@@ -476,7 +469,7 @@ export default function page() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+      
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 gold-gradient opacity-95" />
         <div className="absolute inset-0 pointer-events-none">
@@ -513,8 +506,6 @@ export default function page() {
           </AnimatedSection>
         </div>
       </section>
-
-   
     </div>
   );
 }

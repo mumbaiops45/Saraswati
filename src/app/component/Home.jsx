@@ -122,16 +122,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 w-full flex flex-col lg:flex-row items-center gap-12">
 
           <div className="flex-1">
-
-
-            {/* <div className=" hidden lg:flex absolute top-32 right-16 items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
-              <span className="text-2xl">🏆</span>
-              <div>
-                <div className="font-semibold">24 Years Strong</div>
-                <div className="text-white/60 text-xs">Est. 2002</div>
-              </div>
-            </div> */}
-
             <div
               className=" hidden lg:flex absolute bottom-48 right-24 items-center gap-2 bg-amber-500/90 backdrop-blur-md rounded-2xl px-4 py-3 text-white text-sm shadow-xl"
               style={{ animationDelay: "1.5s" }}
@@ -142,15 +132,6 @@ export default function Home() {
                 <div className="text-white/80 text-xs">Coached & Placed</div>
               </div>
             </div>
-
-            {/* badge */}
-            {/* <div
-              className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
-            >
-              <span className="relative w-2 h-2 bg-amber-400 rounded-full pulse-dot" />
-              Admissions Open · 2026–27 Batch
-            </div> */}
-
            
             <h1 className="font-display text-4xl sm:text-5xl lg:text-5xl xl:text-5xl text-white leading-[1.1] mb-6">
               Thane's Most{" "}
@@ -179,16 +160,12 @@ export default function Home() {
 
          
           <div className="flex-1 flex justify-center lg:justify-end relative">
-
             <div className="relative w-full max-w-md lg:max-w-lg ">
-
-             
               <img
                 src="/coachingclasses.webp"
                 alt="Coaching Classes"
                 className="w-full rounded-3xl shadow-2xl border border-white/10"
               />
-
               <div className="absolute inset-0 bg-amber-500/10 blur-2xl rounded-3xl -z-10" />
             </div>
 

@@ -146,7 +146,6 @@ export default function Page() {
         @keyframes shine  { 0%,100%{left:-75%} 50%{left:125%} }
         @keyframes float  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
         .float-anim { animation: float 5s ease-in-out infinite; }
-        .clip-hero  { clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); }
         .marquee-track { display:flex; animation: marquee 18s linear infinite; }
         @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
         .faq-body { overflow:hidden; transition: max-height 0.4s ease, opacity 0.3s ease; }
@@ -157,7 +156,7 @@ export default function Page() {
 
    
       <section
-        className="clip-hero min-h-[68vh] flex items-center relative overflow-hidden pt-24 pb-32"
+        className=" min-h-[68vh] flex items-center relative overflow-hidden pt-24 pb-32"
         style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)" }}
       >
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />

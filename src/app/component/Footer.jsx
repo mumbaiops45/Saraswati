@@ -41,45 +41,7 @@ export default function Footer() {
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
         </div>
 
-        {/* <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center justify-between gap-10"> */}
-
-          
-          {/* <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/25 text-amber-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
-              🎉 Admissions Open — 2026–27
-            </div>
-
-            <h2 className="text-3xl lg:text-4xl font-bold leading-snug mb-3">
-              Start Your Child's <br />
-              <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-600 bg-clip-text text-transparent">
-                Success Story
-              </span>{" "}
-              Today
-            </h2>
-
-            <p className="text-gray-400 text-sm max-w-md">
-              Limited seats across all 6 centres. Book a free demo class — no commitment, no pressure.
-            </p>
-          </div> */}
-
-         
-          {/* <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href="/contact"
-              className="relative overflow-hidden bg-gradient-to-br from-amber-400 to-amber-600 text-white font-bold px-7 py-4 rounded-full shadow-lg shadow-amber-500/20 hover:scale-105 transition"
-            >
-              <span className="relative z-10">📅 Book Free Demo Class</span>
-              <span className="absolute inset-0 bg-white/10 opacity-0 hover:opacity-100 transition" />
-            </a>
-
-            <a
-              href="https://wa.me/919136332019"
-              className="flex items-center justify-center gap-2 bg-green-500/10 border border-green-400/30 text-green-300 font-bold px-7 py-4 rounded-full hover:bg-green-500/20 transition"
-            >
-              💬 WhatsApp Us
-            </a>
-          </div> */}
-        {/* </div> */}
+     
       </div>
 
       <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
@@ -208,7 +170,6 @@ export default function Footer() {
                   <span className="text-amber-400">9 AM – 1 PM</span>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

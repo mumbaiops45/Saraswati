@@ -78,7 +78,6 @@ export default function Page() {
   return (
     <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
       <style>{`
-       
         .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .gold-text { background: linear-gradient(135deg, #f59e0b, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -113,7 +112,7 @@ export default function Page() {
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
 
-        <div className="float-anim absolute top-32 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+        <div className=" absolute top-32 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">🏛️</span>
           <div>
             <div className="font-semibold">Est. 2002</div>
@@ -125,13 +124,12 @@ export default function Page() {
           <div className="max-w-3xl">
             <div
               className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-2 rounded-full mb-6 tracking-widest uppercase"
-              style={{ animation: "fadeIn 0.8s ease 0.2s both" }}
             >
               Our Story
             </div>
             <h1
               className="font-display text-4xl sm:text-5xl lg:text-5xl text-white leading-[1.1] mb-6"
-              style={{ animation: "fadeIn 0.9s ease 0.3s both" }}
+              
             >
               24 Years of{" "}
               <span className="gold-text">Building Toppers</span>
@@ -151,7 +149,6 @@ export default function Page() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
             <AnimatedSection delay={0}>
               <div className="relative">
                 <div className="bg-gray-950 rounded-3xl p-10 relative overflow-hidden">
@@ -264,7 +261,7 @@ export default function Page() {
       </section>
 
 
-      <section className="py-24 bg-gray-950">
+      <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
             <div className="text-center mb-14">
@@ -281,26 +278,28 @@ export default function Page() {
             {[
               {
                 label: "VISION",
-                icon: "🔭",
+                icon: "",
                 color: "from-amber-500 to-orange-600",
                 text: "To be the most trusted and results-driven coaching institute in Thane — preparing every student, from Class 7 to JEE Advanced and NEET, with the knowledge, discipline and confidence to achieve their highest potential.",
               },
               {
                 label: "MISSION",
-                icon: "🚀",
+                icon: "",
                 color: "from-blue-500 to-indigo-600",
                 text: "To deliver structured, personalised and academically rigorous coaching that transforms Thane students into board toppers, JEE qualifiers and NEET achievers — within their own neighbourhood, without compromise.",
               },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="card-hover relative bg-white/5 border border-white/10 rounded-2xl p-8 h-full group overflow-hidden">
+                  
+
                   <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
                   <div className={`inline-block bg-gradient-to-r ${item.color} text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5`}>
                     {item.label}
                   </div>
                   <div className="text-4xl mb-4">{item.icon}</div>
                   <p className="text-gray-300 leading-relaxed">{item.text}</p>
-                  <div className={`mt-6 w-10 h-1 rounded-full bg-gradient-to-r ${item.color} group-hover:w-20 transition-all duration-300`} />
+                  <div className={`mt-6 w-10 h-1 rounded-full bg-gradient-to-r ${item.color} group-hover:w-100 transition-all duration-300`} />
                 </div>
               </AnimatedSection>
             ))}
@@ -325,7 +324,7 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
-                <div className={`card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm h-full ${i === 4 ? "lg:col-start-2" : ""}`}>
+                <div className={` bg-white rounded-2xl p-7 border border-gray-100 hover:border-amber-400 shadow-sm hover:shadow-xl transition-all duration-300 h-full ${i === 4 ? "lg:col-start-2" : ""}`}>
                   <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-2xl mb-5">
                     {v.icon}
                   </div>
@@ -481,10 +480,10 @@ export default function Page() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="#" className="shine-btn bg-white text-amber-600 font-bold px-8 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform duration-200 text-base">
-                📅 Book Your Free Demo
+                 Book Your Free Demo
               </a>
               <a href="#" className="bg-white/15 border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/25 transition-all duration-200 text-base">
-                💬 WhatsApp Us
+                 WhatsApp Us
               </a>
             </div>
           </AnimatedSection>

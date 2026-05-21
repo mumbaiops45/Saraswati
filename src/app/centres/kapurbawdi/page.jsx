@@ -162,12 +162,12 @@ export default function Page() {
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
-          <span className="text-2xl">📍</span>
+        <div className=" absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+        
           <div><div className="font-semibold">{centre.landmark}</div><div className="text-white/60 text-xs">Easy to find</div></div>
         </div>
-        <div className="float-anim absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay:"1.5s" }}>
-          <span className="text-2xl">🎓</span>
+        <div className=" absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay:"1.5s" }}>
+
           <div><div className="font-semibold">Free Demo Class</div><div className="text-white/80 text-xs">No commitment required</div></div>
         </div>
 
@@ -193,7 +193,7 @@ export default function Page() {
             <div className="flex flex-wrap gap-3" style={{ animation:"fadeIn 0.9s ease 0.7s both" }}>
               <a href="#demo-form"
                 className="shine-btn gold-gradient text-white font-bold px-7 py-4 rounded-full shadow-2xl shadow-amber-500/30 hover:scale-105 transition-transform duration-200 text-sm">
-                📅 Book Free Demo at {centre.name}
+                 Book Free Demo at {centre.name}
               </a>
               <a href={`tel:${centre.phone}`}
                 className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold px-7 py-4 rounded-full hover:bg-white/20 transition-all duration-200 text-sm">
@@ -320,13 +320,13 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {centre.courses.map((c, i) => (
               <AnimatedSection key={i} delay={i * 0.07}>
-                <div className="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm h-full group">
+                <div className=" bg-white rounded-2xl p-7 border border-gray-100 shadow-sm h-full group">
                   <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform duration-200">
                     {c.icon}
                   </div>
                   <h3 className="font-semibold text-gray-900 text-base mb-1.5">{c.name}</h3>
                   <p className="text-gray-400 text-sm">{c.desc}</p>
-                  <div className={`mt-5 w-8 h-1 rounded-full bg-gradient-to-r ${centre.color} group-hover:w-16 transition-all duration-300`} />
+                  <div className={`mt-5 w-12 h-1 rounded-full bg-gradient-to-r ${centre.color} group-hover:w-80 transition-all duration-300`} />
                 </div>
               </AnimatedSection>
             ))}

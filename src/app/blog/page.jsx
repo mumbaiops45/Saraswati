@@ -135,15 +135,15 @@ export default function Page() {
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
-          <span className="text-2xl">✍️</span>
+        <div className=" absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+
           <div>
             <div className="font-semibold">15 Posts / Month</div>
             <div className="text-white/60 text-xs">Faculty-reviewed content</div>
           </div>
         </div>
-        <div className="float-anim absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
-          <span className="text-2xl">📖</span>
+        <div className="absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
+
           <div>
             <div className="font-semibold">6 Categories</div>
             <div className="text-white/80 text-xs">JEE · NEET · MHT-CET & more</div>
@@ -436,10 +436,10 @@ export default function Page() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="#" className="shine-btn bg-white text-amber-600 font-bold px-8 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform duration-200 text-base">
-                📅 Book Your Free Demo
+                 Book Your Free Demo
               </a>
               <a href="#" className="bg-white/15 border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/25 transition-all duration-200 text-base">
-                💬 WhatsApp Us
+                 WhatsApp Us
               </a>
             </div>
           </AnimatedSection>

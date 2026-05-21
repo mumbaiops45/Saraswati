@@ -83,10 +83,10 @@ const trendData = [
 ];
 
 const tabs = [
-  { id: "jee", label: "IIT JEE", icon: "🎯", color: "from-emerald-500 to-teal-500", tagBg: "bg-emerald-500" },
-  { id: "neet", label: "NEET UG", icon: "🩺", color: "from-rose-500 to-pink-500", tagBg: "bg-rose-500" },
-  { id: "mhtcet", label: "MHT-CET", icon: "🏆", color: "from-violet-500 to-purple-500", tagBg: "bg-violet-500" },
-  { id: "hsc", label: "HSC Board", icon: "📜", color: "from-blue-500 to-indigo-500", tagBg: "bg-blue-500" },
+  { id: "jee", label: "IIT JEE", icon: "", color: "from-emerald-500 to-teal-500", tagBg: "bg-emerald-500" },
+  { id: "neet", label: "NEET UG", icon: "", color: "from-rose-500 to-pink-500", tagBg: "bg-rose-500" },
+  { id: "mhtcet", label: "MHT-CET", icon: "", color: "from-violet-500 to-purple-500", tagBg: "bg-violet-500" },
+  { id: "hsc", label: "HSC Board", icon: "", color: "from-blue-500 to-indigo-500", tagBg: "bg-blue-500" },
 ];
 
 const resultMap = { jee: jeeResults, neet: neetResults, mhtcet: mhtcetResults, hsc: hscResults };
@@ -348,12 +348,12 @@ export default function Page() {
 
                   {r.college && (
                     <div className="bg-gray-50 rounded-lg px-3 py-2 text-xs text-gray-600 border border-gray-100">
-                      🎓 {r.college}
+                       {r.college}
                     </div>
                   )}
                   {r.board && (
                     <div className="bg-gray-50 rounded-lg px-3 py-2 text-xs text-gray-600 border border-gray-100">
-                      📋 {r.board}
+                       {r.board}
                     </div>
                   )}
                 </div>

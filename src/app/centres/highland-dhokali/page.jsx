@@ -163,12 +163,11 @@ export default function Page() {
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8 rounded-full blur-3xl pointer-events-none" />
 
        
-        <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
-          <span className="text-2xl">📍</span>
+        <div className=" absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+    
           <div><div className="font-semibold">{centre.landmark}</div><div className="text-white/60 text-xs">Easy to find</div></div>
         </div>
-        <div className="float-anim absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay:"1.5s" }}>
-          <span className="text-2xl">🎓</span>
+        <div className=" absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay:"1.5s" }}>
           <div><div className="font-semibold">Free Demo Class</div><div className="text-white/80 text-xs">No commitment required</div></div>
         </div>
 
@@ -193,7 +192,7 @@ export default function Page() {
             <div className="flex flex-wrap gap-3" style={{ animation:"fadeIn 0.9s ease 0.7s both" }}>
               <a href="#demo-form"
                 className="shine-btn gold-gradient text-white font-bold px-7 py-4 rounded-full shadow-2xl shadow-amber-500/30 hover:scale-105 transition-transform duration-200 text-sm">
-                📅 Book Free Demo at {centre.name}
+                 Book Free Demo at {centre.name}
               </a>
               <a href={`tel:${centre.phone}`}
                 className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold px-7 py-4 rounded-full hover:bg-white/20 transition-all duration-200 text-sm">
@@ -325,7 +324,7 @@ export default function Page() {
                   </div>
                   <h3 className="font-semibold text-gray-900 text-base mb-1.5">{c.name}</h3>
                   <p className="text-gray-400 text-sm">{c.desc}</p>
-                  <div className={`mt-5 w-8 h-1 rounded-full bg-gradient-to-r ${centre.color} group-hover:w-16 transition-all duration-300`} />
+                  <div className={`mt-5 w-12 h-1 rounded-full bg-gradient-to-r ${centre.color} group-hover:w-80 transition-all duration-300`} />
                 </div>
               </AnimatedSection>
             ))}
@@ -475,7 +474,7 @@ export default function Page() {
                   </div>
                   <button type="submit"
                     className="shine-btn w-full gold-gradient text-white font-bold py-4 rounded-xl mt-5 text-base shadow-xl shadow-amber-300/30 hover:scale-[1.02] transition-transform duration-200">
-                    📅 Book My Free Demo at {centre.name} →
+                     Book My Free Demo at {centre.name} →
                   </button>
                   <p className="text-center text-gray-400 text-xs mt-3">
                     No fees. No commitment. 2-hour response guaranteed.
@@ -583,10 +582,10 @@ export default function Page() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="#demo-form" className="shine-btn bg-white text-amber-600 font-bold px-8 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform duration-200 text-base">
-                📅 Book Free Demo at {centre.name}
+                 Book Free Demo at {centre.name}
               </a>
               <a href={centre.whatsapp} className="bg-white/15 border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/25 transition-all duration-200 text-base">
-                💬 WhatsApp Us
+                 WhatsApp Us
               </a>
             </div>
           </AnimatedSection>

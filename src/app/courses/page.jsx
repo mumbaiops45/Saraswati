@@ -45,7 +45,7 @@ const courses = [
     bgDark: "from-amber-950/40 to-orange-950/20",
     borderColor: "border-amber-500/30",
     tagBg: "bg-amber-500",
-    icon: "🏗️",
+    icon: "",
     highlights: [
       { label: "Boards Covered", value: "CBSE, ICSE, SSC" },
       { label: "Subjects", value: "Maths, Science, English, Social Studies" },
@@ -70,7 +70,7 @@ const courses = [
     bgDark: "from-blue-950/40 to-indigo-950/20",
     borderColor: "border-blue-500/30",
     tagBg: "bg-blue-500",
-    icon: "📖",
+    icon: "",
     highlights: [
       { label: "Streams", value: "PCM · PCB · PCMB" },
       { label: "Boards", value: "Maharashtra HSC + CBSE" },
@@ -95,7 +95,7 @@ const courses = [
     bgDark: "from-emerald-950/40 to-teal-950/20",
     borderColor: "border-emerald-500/30",
     tagBg: "bg-emerald-500",
-    icon: "🎯",
+    icon: "",
     highlights: [
       { label: "Programme", value: "2-Year Integrated / 1-Year Intensive" },
       { label: "Faculty", value: "IITians & NITians, 5+ yrs exp." },
@@ -120,7 +120,7 @@ const courses = [
     bgDark: "from-rose-950/40 to-pink-950/20",
     borderColor: "border-rose-500/30",
     tagBg: "bg-rose-500",
-    icon: "🩺",
+    icon: "",
     highlights: [
       { label: "Programme", value: "2-Year Integrated / 1-Year Intensive" },
       { label: "Subjects", value: "Physics, Chemistry, Botany, Zoology" },
@@ -145,7 +145,7 @@ const courses = [
     bgDark: "from-violet-950/40 to-purple-950/20",
     borderColor: "border-violet-500/30",
     tagBg: "bg-violet-500",
-    icon: "🏆",
+    icon: "",
     highlights: [
       { label: "Exam", value: "MHT-CET Engineering + Pharmacy" },
       { label: "Coverage", value: "PCM & PCB — Class 11 + 12" },
@@ -170,7 +170,7 @@ const courses = [
     bgDark: "from-yellow-950/40 to-amber-950/20",
     borderColor: "border-yellow-500/30",
     tagBg: "bg-yellow-500",
-    icon: "⭐",
+    icon: "",
     highlights: [
       { label: "Exams Covered", value: "NSO, IMO, NTSE, KVPY" },
       { label: "Classes", value: "Class 7 to 10" },
@@ -233,20 +233,14 @@ export default function Page() {
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
         
-        <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+        <div className=" absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">📚</span>
           <div>
             <div className="font-semibold">6 Programmes</div>
             <div className="text-white/60 text-xs">Class 7 to JEE Advanced</div>
           </div>
         </div>
-        <div className="float-anim absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 backdrop-blur-md rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
-          <span className="text-2xl">🎓</span>
-          <div>
-            <div className="font-semibold">IITian Faculty</div>
-            <div className="text-white/80 text-xs">Full-time Only</div>
-          </div>
-        </div>
+        
 
         <div className="max-w-7xl  px-16">
           <div className="max-w-3xl">
@@ -321,7 +315,7 @@ export default function Page() {
                         <div className={`inline-block bg-gradient-to-r ${c.color} text-white text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4`}>
                           {c.tag}
                         </div>
-                        <div className="text-4xl mb-4">{c.icon}</div>
+                        {/* <div className="text-4xl mb-4">{c.icon}</div> */}
                         <div className="text-gray-400 text-sm mb-2 font-medium uppercase tracking-wider">{c.label}</div>
                         <h3 className="font-display text-2xl lg:text-3xl text-white font-bold leading-snug mb-5">
                           {c.title}
@@ -393,7 +387,7 @@ export default function Page() {
             {courses.map((c, i) => (
               <AnimatedSection key={c.id} delay={i * 0.07}>
                 <div
-                  className="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm h-full cursor-pointer group"
+                  className=" bg-white rounded-2xl p-7 border border-gray-100 shadow-sm h-full cursor-pointer group"
                   onClick={() => {
                     setActiveTab(c.id);
                     document.querySelector("section:nth-of-type(2)")?.scrollIntoView({ behavior: "smooth" });
@@ -402,11 +396,11 @@ export default function Page() {
                   <div className={`inline-block bg-gradient-to-r ${c.color} text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4`}>
                     {c.tag}
                   </div>
-                  <div className="text-3xl mb-3">{c.icon}</div>
+                  {/* <div className="text-3xl mb-3">{c.icon}</div> */}
                   <div className="text-gray-400 text-xs font-medium mb-1">{c.label}</div>
                   <h3 className="font-semibold text-gray-900 text-lg mb-3 leading-snug">{c.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{c.intro}</p>
-                  <div className={`mt-5 w-8 h-1 rounded-full bg-gradient-to-r ${c.color} group-hover:w-16 transition-all duration-300`} />
+                  <div className={`mt-5 w-8 h-1 rounded-full bg-gradient-to-r ${c.color} group-hover:w-80 transition-all duration-300`} />
                 </div>
               </AnimatedSection>
             ))}
@@ -487,7 +481,7 @@ export default function Page() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection>
             <div className="inline-block bg-white/20 text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 border border-white/30">
-              🎉 Admissions Open for 2026–27
+               Admissions Open for 2026–27
             </div>
             <h2 className="font-display text-3xl lg:text-5xl text-white font-bold mb-5 leading-tight">
               Find the Right Course<br />for Your Child

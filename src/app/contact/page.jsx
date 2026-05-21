@@ -133,11 +133,11 @@ export default function Page() {
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-500/8  rounded-full blur-3xl pointer-events-none" />
 
-        <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
+        <div className=" absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <span className="text-2xl">⚡</span>
           <div><div className="font-semibold">2-Hour Response</div><div className="text-white/60 text-xs">During school hours</div></div>
         </div>
-        <div className="float-anim absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
+        <div className="absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
           <span className="text-2xl">🎓</span>
           <div><div className="font-semibold">Free Demo Class</div><div className="text-white/80 text-xs">No commitment required</div></div>
         </div>
@@ -410,8 +410,8 @@ export default function Page() {
                       Over 10,000 students coached. 6 centres across Thane. Admissions open for 2026–27.
                     </div>
                     <div className="mt-4 flex items-center gap-4 text-sm font-semibold">
-                      <span>✅ Free Demo</span>
-                      <span>✅ No Obligation</span>
+                      <span> Free Demo</span>
+                      <span> No Obligation</span>
                     </div>
                   </div>
                 </div>

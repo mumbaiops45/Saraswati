@@ -186,12 +186,11 @@ export default function Page() {
         <div className="absolute top-10 right-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-emerald-500/8 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="float-anim absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
-          <span className="text-2xl">📥</span>
+        <div className=" absolute top-36 right-16 hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3 text-white text-sm shadow-xl">
           <div><div className="font-semibold">40+ Free Resources</div><div className="text-white/60 text-xs">No signup required</div></div>
         </div>
-        <div className="float-anim absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
-          <span className="text-2xl">📅</span>
+        <div className=" absolute bottom-44 right-28 hidden lg:flex items-center gap-2 bg-amber-500/90 rounded-2xl px-4 py-3 text-white text-sm shadow-xl" style={{ animationDelay: "1.5s" }}>
+          
           <div><div className="font-semibold">Exam Deadlines 2026</div><div className="text-white/80 text-xs">All in one place</div></div>
         </div>
 
@@ -283,7 +282,7 @@ export default function Page() {
                       ? `${cat.tagBg} text-white border-transparent shadow-lg scale-105`
                       : "bg-white text-gray-600 border-gray-200 hover:border-gray-300"
                   }`}>
-                  <span>{cat.icon}</span>
+                
                   <span>{cat.label}</span>
                 </button>
               ))}
@@ -294,7 +293,6 @@ export default function Page() {
           <AnimatedSection delay={0.1}>
             <div className={`rounded-2xl ${activeCat.bgLight} border ${activeCat.border} px-6 py-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3`}>
               <div className="flex items-center gap-3">
-                <span className="text-2xl">{activeCat.icon}</span>
                 <div>
                   <div className={`font-bold ${activeCat.text}`}>{activeCat.label} Resources</div>
                   <div className="text-gray-500 text-xs">{activeCat.resources.length} free downloads available</div>
@@ -312,10 +310,6 @@ export default function Page() {
             {filtered.length > 0 ? filtered.map((r, i) => (
               <AnimatedSection key={i} delay={i * 0.05}>
                 <div className="card-hover bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex items-start gap-5 group">
-                  
-                  <div className={`w-12 h-12 bg-gradient-to-br ${activeCat.color} rounded-xl flex items-center justify-center text-xl shrink-0 shadow-md group-hover:scale-110 transition-transform duration-200`}>
-                    {r.tag === "PYQ" ? "📄" : r.tag === "Formula" ? "🔢" : r.tag === "Notes" ? "📝" : r.tag === "Practice" ? "✏️" : "📋"}
-                  </div>
 
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-3 mb-2">
@@ -379,7 +373,7 @@ export default function Page() {
                 {resourceCategories.filter((c) => c.id !== activeTab).map((cat) => (
                   <button key={cat.id} onClick={() => setActiveTab(cat.id)}
                     className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold ${cat.bgLight} ${cat.border} border ${cat.text} hover:opacity-80 transition-opacity duration-200`}>
-                    {cat.icon} {cat.label}
+                     {cat.label}
                   </button>
                 ))}
               </div>
